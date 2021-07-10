@@ -44,7 +44,7 @@ const CakeStats = () => {
           {TranslateString(534, 'Kitty Stats')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total KITTY Supply')}</Text>
+          <Text fontSize="14px">{TranslateString(536, 'Total GLENTY Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
@@ -52,11 +52,11 @@ const CakeStats = () => {
           <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total KITTY Burned')}</Text>
+          <Text fontSize="14px">{TranslateString(538, 'Total GLENTY Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New KITTY/block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'New GLENTY/block')}</Text>
           <Text bold fontSize="14px">
             {kittyPerBlock}
           </Text>

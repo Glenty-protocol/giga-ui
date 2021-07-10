@@ -75,7 +75,7 @@
     {
       "data": {
         "stringId": 304,
-        "text": "Total KITTY burned since launch"
+        "text": "Total GLENTY burned since launch"
       }
     },
     {
@@ -123,13 +123,13 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn KITTY"
+        "text": "Stake LP tokens to earn GLENTY"
       }
     },
     {
       "data": {
         "stringId": 322,
-        "text": "Stake KITTY, get SYRUP."
+        "text": "Stake GLENTY, get SYRUP."
       }
     },
     {
@@ -153,7 +153,7 @@
     {
       "data": {
         "stringId": 334,
-        "text": "Every time you stake and unstake KITTY tokens, the contract will automatically harvest KITTY rewards for you!"
+        "text": "Every time you stake and unstake GLENTY tokens, the contract will automatically harvest GLENTY rewards for you!"
       }
     },
     {
@@ -219,7 +219,7 @@
     {
       "data": {
         "stringId": 358,
-        "text": "KITTY price"
+        "text": "GLENTY price"
       }
     },
     {
@@ -243,7 +243,7 @@
     {
       "data": {
         "stringId": 380,
-        "text": "1 KITTY = 1 SYRUP"
+        "text": "1 GLENTY = 1 SYRUP"
       }
     },
     {
@@ -291,7 +291,7 @@
     {
       "data": {
         "stringId": 400,
-        "text": "SYRUP holders proportionally split 25% of KITTY block emissions each day (10 KITTY per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 25% of GLENTY block emissions each day (10 GLENTY per block), Rewards are distributed each block."
       }
     },
     {
@@ -351,13 +351,13 @@
     {
       "data": {
         "stringId": 424,
-        "text": "%num% KITTY"
+        "text": "%num% GLENTY"
       }
     },
     {
       "data": {
         "stringId": 426,
-        "text": "Spend KITTY to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
+        "text": "Spend GLENTY to buy tickets, contributing to the lottery pot. Ticket purchases end approx. 30 minutes before lottery. Win prizes if 2, 3, or 4 of your ticket numbers match the winning numbers and their positions! Good luck!"
       }
     },
     {
@@ -435,19 +435,19 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% KITTY Available"
+        "text": "%num% GLENTY Available"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "Your amount must be a multiple of 10 KITTY"
+        "text": "Your amount must be a multiple of 10 GLENTY"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 Ticket = 10 KITTY"
+        "text": "1 Ticket = 10 GLENTY"
       }
     },
     {
@@ -495,7 +495,7 @@
     {
       "data": {
         "stringId": 478,
-        "text": "Ticket purchases are final. Your KITTY cannot be returned to you after buying tickets."
+        "text": "Ticket purchases are final. Your GLENTY cannot be returned to you after buying tickets."
       }
     },
     {
@@ -507,7 +507,7 @@
     {
       "data": {
         "stringId": 482,
-        "text": "KITTY prizes to be claimed"
+        "text": "GLENTY prizes to be claimed"
       }
     },
     {
@@ -543,13 +543,13 @@
     {
       "data": {
         "stringId": 494,
-        "text": "Approve KITTY"
+        "text": "Approve GLENTY"
       }
     },
     {
       "data": {
         "stringId": 496,
-        "text": "SYRUP holders proportionally split 40% of KITTY block emissions each day (10 KITTY per block), Rewards are distributed each block."
+        "text": "SYRUP holders proportionally split 40% of GLENTY block emissions each day (10 GLENTY per block), Rewards are distributed each block."
       }
     },
     {
@@ -567,19 +567,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using KITTY-BNB LP tokens, which means you need to stake equal amounts of KITTY and BNB in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using GLENTY-BNB LP tokens, which means you need to stake equal amounts of GLENTY and BNB in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get KITTY-BNB LP >"
+        "text": "Get GLENTY-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the BNB, Goose Finance burns the KITTY."
+        "text": "The project gets the BNB, Goose Finance burns the GLENTY."
       }
     },
     {
@@ -645,25 +645,25 @@
     {
       "data": {
         "stringId": 534,
-        "text": "KITTY Stats"
+        "text": "GLENTY Stats"
       }
     },
     {
       "data": {
         "stringId": 536,
-        "text": "Total KITTY Supply"
+        "text": "Total GLENTY Supply"
       }
     },
     {
       "data": {
         "stringId": 538,
-        "text": "Total KITTY Burned"
+        "text": "Total GLENTY Burned"
       }
     },
     {
       "data": {
         "stringId": 540,
-        "text": "New KITTY\/block"
+        "text": "New GLENTY\/block"
       }
     },
     {
@@ -675,19 +675,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "KITTY to Harvest"
+        "text": "GLENTY to Harvest"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "KITTY in Wallet"
+        "text": "GLENTY in Wallet"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "Collecting KITTY"
+        "text": "Collecting GLENTY"
       }
     },
     {
@@ -699,7 +699,7 @@
     {
       "data": {
         "stringId": 552,
-        "text": "KITTY to Collect"
+        "text": "GLENTY to Collect"
       }
     },
     {
@@ -765,7 +765,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "Stake KITTY to earn new tokens."
+        "text": "Stake GLENTY to earn new tokens."
       }
     },
     {
@@ -783,7 +783,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "KITTY to burn (USD)"
+        "text": "GLENTY to burn (USD)"
       }
     },
     {
@@ -795,7 +795,7 @@
     {
       "data": {
         "stringId": 590,
-        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest KITTY rewards for you!"
+        "text": "\u2b50\ufe0f Every time you stake and unstake LP tokens, the contract will automatically harvest GLENTY rewards for you!"
       }
     },
     {
@@ -813,13 +813,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy KITTY and BNB tokens"
+        "text": "Buy GLENTY and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get KITTY-BNB LP tokens by adding KITTY and BNB liquidity"
+        "text": "Get GLENTY-BNB LP tokens by adding GLENTY and BNB liquidity"
       }
     },
     {
@@ -831,7 +831,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "While the sale is live, commit your KITTY-LP tokens to buy the IFO tokens"
+        "text": "While the sale is live, commit your GLENTY-LP tokens to buy the IFO tokens"
       }
     },
     {
@@ -867,7 +867,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "Trade in for KITTY, or keep for your collection!"
+        "text": "Trade in for GLENTY, or keep for your collection!"
       }
     },
     {
@@ -909,7 +909,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "When you trade in this NFT to receive KITTY, you will lose access to it forever!"
+        "text": "When you trade in this NFT to receive GLENTY, you will lose access to it forever!"
       }
     },
     {
@@ -939,7 +939,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "Winners can trade in their NFTs for a KITTY value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
+        "text": "Winners can trade in their NFTs for a GLENTY value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
       }
     },
     {
@@ -981,7 +981,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "Trade in for KITTY"
+        "text": "Trade in for GLENTY"
       }
     },
     {
@@ -1107,7 +1107,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "Stake LP tokens to earn KITTY"
+        "text": "Stake LP tokens to earn GLENTY"
       }
     },
     {
@@ -1149,13 +1149,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "The KITTY Lottery"
+        "text": "The GLENTY Lottery"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "Buy tickets with KITTY"
+        "text": "Buy tickets with GLENTY"
       }
     },
     {
@@ -1209,7 +1209,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": "Deposit Fee will be used to buyback KITTY"
+        "text": "Deposit Fee will be used to buyback GLENTY"
       }
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Stake tokens to earn KITTY"
+        "text": "Stake tokens to earn GLENTY"
       }
     },
     {

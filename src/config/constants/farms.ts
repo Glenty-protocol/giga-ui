@@ -5,12 +5,12 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'KITTY-BUSD LP',
+    lpSymbol: 'GLENTY-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0xd6b0edc79b11d6f3eaaa6bfbdbf4e50790c6864e',
     },
-    tokenSymbol: 'KITTY',
+    tokenSymbol: 'GLENTY',
     tokenAddresses: {
       97: '',
       56: '0x27162118C8690E30B584EC759E1Aa52AfDab4488',
@@ -21,12 +21,12 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'KITTY-BNB LP',
+    lpSymbol: 'GLENTY-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x1a6364e229114530d66c0d179af50f9b6e51c82d',
     },
-    tokenSymbol: 'KITTY',
+    tokenSymbol: 'GLENTY',
     tokenAddresses: {
       97: '',
       56: '0x3037e84a22e8C008391a6029517896518Dc026D2',
@@ -182,12 +182,12 @@ const farms: FarmConfig[] = [
     pid: 33,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'KITTY',
+    lpSymbol: 'GLENTY',
     lpAddresses: {
       97: '',
-      56: '0xd6B0eDc79b11D6F3eAAA6bFbdBF4E50790c6864E', // KITTY-BUSD LP
+      56: '0xd6B0eDc79b11D6F3eAAA6bFbdBF4E50790c6864E', // GLENTY-BUSD LP
     },
-    tokenSymbol: 'KITTY',
+    tokenSymbol: 'GLENTY',
     tokenAddresses: {
       97: '',
       56: '0x27162118C8690E30B584EC759E1Aa52AfDab4488',
@@ -202,7 +202,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0xd6B0eDc79b11D6F3eAAA6bFbdBF4E50790c6864E', // KITTY-BUSD LP (BUSD-BUSD will ignore)
+      56: '0xd6B0eDc79b11D6F3eAAA6bFbdBF4E50790c6864E', // GLENTY-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {

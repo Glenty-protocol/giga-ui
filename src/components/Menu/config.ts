@@ -18,11 +18,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: '/swap'
+        href: 'https://exhange.glenty.com/swap'
       },
       {
         label: 'Liquidity',
-        href: '/pool'
+        href: 'https://exhange.glenty.com/pool'
       }
     ]
   },
@@ -34,7 +34,7 @@ const config: MenuEntry[] = [
   {
     label: 'Gigapool',
     icon: 'PoolIcon',
-    href: 'http://glenty.com/pools',
+    href: 'http://gigapool.glenty.com/pools',
   },
   // {
   //   label: 'Lottery',
