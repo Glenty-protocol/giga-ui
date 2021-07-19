@@ -42,14 +42,11 @@ const App: React.FC = () => {
       <Menu>
         <Suspense fallback={<PageLoader />}>
           <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/farms">
-              <Farms />
-            </Route>
+            <Redirect path="/" to="/pools" exact />
+           
+            <Redirect path="/farms" to="/pools" exact />
             <Route path="/pools">
-              <Farms tokenMode />
+            <Farms tokenMode />
             </Route>
             {/* <Route path="/pools"> */}
             {/*  <Pools /> */}

@@ -27,21 +27,21 @@ const CakeStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms()
-  const kittyPrice = usePriceCakeBusd()
+  const glentyPrice = usePriceCakeBusd()
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0)
   const cakeSupply = getBalanceNumber(circSupply)
-  const marketCap = kittyPrice.times(circSupply)
+  const marketCap = glentyPrice.times(circSupply)
 
-  let kittyPerBlock = 0
-  if (farms && farms[0] && farms[0].kittyPerBlock) {
-    kittyPerBlock = new BigNumber(farms[0].kittyPerBlock).div(new BigNumber(10).pow(18)).toNumber()
+  let glentyPerBlock = 0
+  if (farms && farms[0] && farms[0].glentyPerBlock) {
+    glentyPerBlock = new BigNumber(farms[0].glentyPerBlock).div(new BigNumber(10).pow(18)).toNumber()
   }
 
   return (
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Kitty Stats')}
+          {TranslateString(534, 'Glenty Stats')}
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(536, 'Total GLENTY Supply')}</Text>
@@ -58,7 +58,7 @@ const CakeStats = () => {
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New GLENTY/block')}</Text>
           <Text bold fontSize="14px">
-            {kittyPerBlock}
+            {glentyPerBlock}
           </Text>
         </Row>
       </CardBody>

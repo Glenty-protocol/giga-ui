@@ -18,11 +18,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exhange.glenty.com/swap'
+        href: 'https://exchange.glenty.com/swap'
       },
       {
         label: 'Liquidity',
-        href: 'https://exhange.glenty.com/pool'
+        href: 'https://exchange.glenty.com/pool'
       }
     ]
   },
