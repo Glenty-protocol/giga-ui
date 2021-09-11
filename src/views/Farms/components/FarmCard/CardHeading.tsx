@@ -31,18 +31,20 @@ const CardHeading: React.FC<ExpandableSectionProps> = ({
   depositFee,
 }) => {
   return (
-    <Wrapper justifyContent="space-between" alignItems="center" mb="12px">
-      <Image src="/images/farms/1top100.png" alt={tokenSymbol} width={64} height={64} />
+    <div className='tokenHeader' style={{backgroundColor: "rgba(49, 39, 131, 0.9)",borderTopRightRadius:'25px',borderTopLeftRadius:'25px'}} >
+    <Wrapper justifyContent="space-between" alignItems="center" mb="12px" padding='20px 12px'>
+      <Image src={farmImage} alt={tokenSymbol} width={64} height={64} />
       <Flex flexDirection="column" alignItems="flex-end">
-        <Heading mb="4px">{lpLabel}</Heading>
+        <h1 style={{color:'white',fontSize:'20pt',marginBottom:'15px',paddingRight:'20%'}}>{tokenSymbol}</h1>
         <Flex justifyContent="center">
           {depositFee === 0 ? <NoFeeTag /> : null}
           {/* {isCommunityFarm ? <CommunityTag /> : <CoreTag />} */}
           {/* <RiskTag risk={risk} /> */}
-          <MultiplierTag variant="secondary">{multiplier}</MultiplierTag>
         </Flex>
+        <p style={{color:"white",fontSize:'8pt'}}>Stack {lpLabel} earn GLENTY</p>
       </Flex>
     </Wrapper>
+    </div>
   )
 }
 

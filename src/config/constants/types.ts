@@ -47,9 +47,11 @@ export interface FarmConfig {
   tokenAddresses: Address
   quoteTokenSymbol: QuoteToken
   quoteTokenAdresses: Address
+  category?: string
   multiplier?: string
   isTokenOnly?: boolean
   isCommunity?: boolean
+  img?: string
   risk: number
   dual?: {
     rewardPerBlock: number

@@ -6,7 +6,7 @@ const config: MenuEntry[] = [
   //   icon: 'HomeIcon',
   //   href: 'https://bears.finance/'
   // },
-  {
+ /* {
     label: 'Home',
     icon: 'HomeIcon',
     href: 'http://glenty.com',
@@ -81,7 +81,7 @@ const config: MenuEntry[] = [
     href: "https://glenty.gitbook.io/glenty/",
     icon: 'TicketIcon'
   }
-
+*/
 ]
 
 export default config

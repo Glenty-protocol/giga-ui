@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import styled, { keyframes } from 'styled-components'
-import { Flex, Text, Skeleton } from '@pancakeswap-libs/uikit'
+import { Flex, Text, Skeleton,Tag } from '@pancakeswap-libs/uikit'
 import { communityFarms } from 'config/constants'
 import { Farm } from 'state/types'
 import { provider } from 'web3-core'
@@ -79,6 +79,12 @@ const Divider = styled.div`
 const ExpandingWrapper = styled.div<{ expanded: boolean }>`
   height: ${(props) => (props.expanded ? '100%' : '0px')};
   overflow: hidden;
+  padding:0px 24px;
+`
+const MultiplierTag = styled(Tag)`
+  margin-left: 4px;
+  background: white;
+  color:black;
 `
 
 interface FarmCardProps {
@@ -99,9 +105,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
   // We assume the token name is coin pair + lp e.g. CAKE-BNB LP, LINK-BNB LP,
   // NAR-CAKE LP. The images should be cake-bnb.svg, link-bnb.svg, nar-cake.svg
   // const farmImage = farm.lpSymbol.split(' ')[0].toLocaleLowerCase()
-  const farmImage = farm.isTokenOnly
-    ? farm.tokenSymbol.toLowerCase()
-    : `${farm.tokenSymbol.toLowerCase()}-${farm.quoteTokenSymbol.toLowerCase()}`
+  const farmImage = farm.img
 
   const totalValue: BigNumber = useMemo(() => {
     if (!farm.lpTotalInQuoteToken) {
@@ -132,9 +136,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
 
   return (
-    <FCard>
-      {farm.tokenSymbol === 'GLENTY' && <StyledCardAccent />}
-      <CardHeading
+    <div style={{background:'rgb(40, 13, 95)',borderRadius:'25px'}}>
+      {window.innerWidth>900?(<><CardHeading
         lpLabel={lpLabel}
         multiplier={farm.multiplier}
         risk={risk}
@@ -142,10 +145,10 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         farmImage={farmImage}
         tokenSymbol={farm.tokenSymbol}
       />
-      {!removed && (
-        <Flex justifyContent="space-between" alignItems="center">
-          <Text>{TranslateString(352, 'APR')}:</Text>
-          <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+
+        <Flex justifyContent="space-between" alignItems="center" padding='0px 24px'>
+          <Text color='white'>{TranslateString(352, 'APR')}:</Text>
+          <Text color='white' bold style={{ display: 'flex', alignItems: 'center' }}>
             {farm.apy ? (
               <>
                 <ApyButton
@@ -163,23 +166,32 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
             )}
           </Text>
         </Flex>
-      )}
-      <Flex justifyContent="space-between">
-        <Text>{TranslateString(318, 'Earn')}:</Text>
-        <Text bold>{earnLabel}</Text>
-      </Flex>
-      <Flex justifyContent="space-between">
-        <Text style={{ fontSize: '24px' }}>{TranslateString(10001, 'Deposit Fee')}:</Text>
-        <Text bold style={{ fontSize: '24px' }}>
-          {farm.depositFeeBP / 100}%
-        </Text>
-      </Flex>
-      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
-      <Divider />
+        
+         <Flex justifyContent="space-between" padding='0px 24px'>
+         <Text style={{color:'white'}}>{TranslateString(318, 'Earn')}:</Text>
+         <MultiplierTag variant="secondary">{farm.multiplier}</MultiplierTag>
+ 
+ {/* <Text bold>{earnLabel}</Text> */}
+       </Flex>
+       <Flex justifyContent="space-between" padding='0px 24px'>
+         <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
+         <Text bold style={{ fontSize: '12pt',color:'white' }}>
+           {farm.depositFeeBP / 100}%
+         </Text>
+       </Flex>
+       <div style={{padding:'0px 24px'}}>
+       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
+       </div>
+       
+      
+     
+      <div style={{margin:'20px 0px'}}>
       <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
         expanded={showExpandableSection}
       />
+      </div>
+      <div style={{marginBottom:'10px'}}>
       <ExpandingWrapper expanded={showExpandableSection}>
         <DetailsSection
           removed={removed}
@@ -196,7 +208,51 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           tokenAddresses={tokenAddresses}
         />
       </ExpandingWrapper>
-    </FCard>
+      </div></>):(
+        <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',padding:"5% 1%"}} className="coin">
+          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%',padding:'10px'}} src={farmImage} alt={farm.tokenSymbol} />
+          <div style={{color:'white',fontSize:'8pt',marginTop:'30%',textAlign:'left'}}>
+          {farm.tokenSymbol}
+        </div>
+        <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
+        APR:
+        <br />
+        {farmAPY}%
+        </div>
+        <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
+        Deposit Fee:
+        <br />
+        {farm.depositFeeBP / 100}%
+        </div>
+        <div style={{marginTop:'30%'}}>
+        <ExpandableSectionButton
+        onClick={() => setShowExpandableSection(!showExpandableSection)}
+        expanded={showExpandableSection}
+      />
+      </div>
+      <div style={{marginBottom:'10px',width:"500%"}}>
+      <ExpandingWrapper expanded={showExpandableSection}>
+      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
+        <DetailsSection
+          removed={removed}
+          isTokenOnly={farm.isTokenOnly}
+          bscScanAddress={
+            farm.isTokenOnly
+              ? `https://bscscan.com/token/${farm.tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+              : `https://bscscan.com/token/${farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]}`
+          }
+          totalValueFormated={totalValueFormated}
+          lpLabel={lpLabel}
+          quoteTokenAdresses={quoteTokenAdresses}
+          quoteTokenSymbol={quoteTokenSymbol}
+          tokenAddresses={tokenAddresses}
+        />
+      </ExpandingWrapper>
+      </div>
+      </div>
+      )}
+
+    </div>
   )
 }
 

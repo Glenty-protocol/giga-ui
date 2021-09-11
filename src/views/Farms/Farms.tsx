@@ -41,6 +41,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const [stakedOnly, setStakedOnly] = useState(false)
 
   const activeFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier !== '0X')
+  const glentyFarms = farmsLP.filter((farm) => farm.category === 'glenty')
+  const gigapoolFarms = farmsLP.filter((farm) => farm.category === 'gigapool')
+  const outsidersFarms = farmsLP.filter((farm) => farm.category === 'outsiders')
   const inactiveFarms = farmsLP.filter((farm) => !!farm.isTokenOnly === !!tokenMode && farm.multiplier === '0X')
 
   const stakedOnlyFarms = activeFarms.filter(
@@ -93,25 +96,53 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
+      <Heading as="h1" size="30pt" color="rgb(218, 165, 32)" mb="50px" style={{ textAlign: 'center',fontSize:'30pt',marginLeft:'-30%'}}>
         {tokenMode
           ? TranslateString(10002, 'Stake tokens to earn GLENTY')
           : TranslateString(320, 'Stake LP tokens to earn GLENTY')}
       </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+      <Heading as="h2" color="rgb(218, 165, 32)" mb="50px" style={{ textAlign: 'center',fontSize:'20px',marginLeft:'-30%',fontWeight:'lighter'}}>
         {TranslateString(10000, 'Deposit Fee will be used to buyback GLENTY')}
       </Heading>
-      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
-      <div>
-        <Divider />
-        <FlexLayout>
-          <Route exact path={`${path}`}>
+     {/* <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} /> */}
+     <div className='glentyTop'>
+     <div className='headerTitle'> GLENTY</div>
+        <div className="grid-Glenty">
+         {/* <Route exact path={`${path}`}>
             {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
           </Route>
           <Route exact path={`${path}/history`}>
             {farmsList(inactiveFarms, true)}
+        </Route> */}
+        {farmsList(glentyFarms, true)}
+        </div>
+      </div>
+
+      <div className='gigapoolTop'>
+     <div className='headerTitle gigaTitle'> GIGAPOOL</div>
+     <input type='text' placeholder='Search GigaPool.....' className='searchInputG' />
+        <div className="grid-Gigapool">
+          {/* <Route exact path={`${path}`}>
+            {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
           </Route>
-        </FlexLayout>
+          <Route exact path={`${path}/history`}>
+            {farmsList(inactiveFarms, true)}
+      </Route> */}
+        {farmsList(gigapoolFarms, true)}
+        </div>
+      </div>
+      <div className='outTop' style={{marginTop:'17vh',marginBottom:'6vh'}}>
+     <div className='headerTitle gigaTitle'> OUTSIDERS</div>
+     <input type='text' placeholder='Search Outsiders.....' className='searchInputO' />
+        <div className="grid-Out">       
+          {/* <Route exact path={`${path}`}>
+            {stakedOnly ? farmsList(stakedOnlyFarms, false) : farmsList(activeFarms, false)}
+          </Route>
+          <Route exact path={`${path}/history`}>
+            {farmsList(inactiveFarms, true)}
+      </Route> */}
+        {farmsList(outsidersFarms, true)}
+        </div>
       </div>
     </Page>
   )
