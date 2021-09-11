@@ -56,8 +56,8 @@ window.onload = ()=>{
    homel.setAttribute("href", "/")
    linkl1.setAttribute("href", "https://exchange.glenty.com/#/swap")
    linkl2.setAttribute("href", "https://exchange.glenty.com/#/pool")
-   farmsl.setAttribute("href", "/farms")
-   gigapooll.setAttribute("href", "/gigapool")
+   farmsl.setAttribute("href", "https://glenty.com/farms")
+   gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
    docsl.setAttribute("href", "https://glenty.gitbook.io/glenty/")
 
@@ -189,8 +189,8 @@ function mobileC(){
     
     
       TradeM.setAttribute('href','https://exchange.glenty.com/#/swap');
-      Top100M.setAttribute('href','/top100');
-      gigapoolM.setAttribute('href','/gigapool');
+      Top100M.setAttribute('href','https://glenty.com/top100');
+      gigapoolM.setAttribute('href','https://giga.glenty.com/');
     
     
       const tradeImg = document.createElement('img');
@@ -263,8 +263,8 @@ function mobileC(){
     
       githubM.setAttribute('href','https://github.com/glenty-protocol');
       docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
-      ipoM.setAttribute('href','/ico');
-      FarmsM.setAttribute('href','/farms');
+      ipoM.setAttribute('href','https://glenty.com/ico');
+      FarmsM.setAttribute('href','https://glenty.com/farms');
     
     
       const githubImg = document.createElement('img');
