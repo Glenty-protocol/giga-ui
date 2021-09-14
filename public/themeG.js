@@ -34,28 +34,21 @@ window.onload = ()=>{
   const drop = document.createElement('div')
 
   const homel = document.createElement("a")
-  const tradel = document.createElement("button")
+  const tradel = document.createElement("a")
   const farmsl = document.createElement("a")
   const gigapooll = document.createElement("a")
   const githubl = document.createElement("a")
   const docsl = document.createElement("a")
-  const linkl1 = document.createElement("a")
-  const linkl2 = document.createElement("a")
-
-
+ 
    homel.innerHTML= 'Home'
    tradel.innerHTML= 'Trade'
    farmsl.innerHTML= 'Farms'
    gigapooll.innerHTML= 'Giga Pool'
    githubl.innerHTML= 'Github'
    docsl.innerHTML= 'Docs'
-   linkl1.innerHTML= 'Exchange'
-   linkl2.innerHTML= 'Liquidity'
-
 
    homel.setAttribute("href", "/")
-   linkl1.setAttribute("href", "https://exchange.glenty.com/#/swap")
-   linkl2.setAttribute("href", "https://exchange.glenty.com/#/pool")
+   tradel.setAttribute("href", "https://exchange.glenty.com/#/swap")
    farmsl.setAttribute("href", "https://glenty.com/farms")
    gigapooll.setAttribute("href", "https://giga.glenty.com")
    githubl.setAttribute("href", "https://github.com/glenty-protocol")
@@ -63,13 +56,11 @@ window.onload = ()=>{
 
    homel.setAttribute("class", "nav-links")
    tradel.setAttribute("class", "nav-links")
-   trade.setAttribute("class", "dropiv")
-   tradel.setAttribute("class", "dropbtn")
+   tradel.setAttribute("class", "nav-links")
    farmsl.setAttribute("class", "nav-links")
    gigapooll.setAttribute("class", "nav-links")
    githubl.setAttribute("class", "nav-links")
    docsl.setAttribute("class", "nav-links")
-   drop.setAttribute("class", "dropdown-content")
 
 
    home.appendChild(homel)
@@ -79,8 +70,6 @@ window.onload = ()=>{
    gigapool.appendChild(gigapooll)
    github.appendChild(githubl)
    docs.appendChild(docsl)
-   drop.appendChild(linkl1)
-   drop.appendChild(linkl2)
    const heade = document.createElement('div')
    const nav = document.querySelector('nav')
    heade.appendChild(home)
