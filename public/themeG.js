@@ -1,16 +1,11 @@
 window.onload = ()=>{
-  document.querySelector('nav').style.backgroundColor='transparent';
-  document.querySelector('#root').style.background = 'url("./images/GLENTYPOOL_background_Plan de travail 1 copie 8.svg")';
-  document.querySelector('#root').style.backgroundPositionX = 'center'
-  document.querySelector('#root').style.backgroundSize='cover';
-  document.querySelectorAll('button')[1].style.backgroundColor= 'white';
-  document.querySelectorAll('button')[1].style.color= 'black';
-  document.querySelectorAll('button')[1].style.fontWeight= 'normal';
-  document.querySelectorAll('button')[1].style.letterSpacing= '0.11em';
-  window.onscroll = function() {myFunction()};
-  document.querySelector('svg').parentElement.addEventListener('click',function(){
-    window.location.replace("http://glenty.com");
+  document.querySelector('a').removeAttribute('href');
+  document.querySelector('a').style.cursor='pointer';
+  document.querySelector('a').addEventListener('click',function(){
+    window.location.replace('https://glenty.com')
   })
+  window.onscroll = function() {myFunction()};
+
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector('nav').style.background = "url('./images/Fichier 8.svg')";
@@ -83,7 +78,6 @@ const docsl = document.createElement("a")
  heade.appendChild(docs)
  heade.classList.add('header-grid')
 
- document.querySelectorAll('nav svg')[2].style.width='310px';
  nav.insertBefore(heade, nav.childNodes[1])
  document.querySelector('#root div').querySelectorAll('div')[12].style.background='transparent';
  document.querySelector('#root div').querySelectorAll('div')[14].style.background='transparent';
@@ -94,13 +88,7 @@ const docsl = document.createElement("a")
   document.querySelector('#root').appendChild(document.querySelector('.socialL'));
   }
 }, 2000);
-document.querySelector('button').remove();
-setTimeout(function(){
-  document.querySelector('#root div').querySelectorAll('div')[18].classList.add('lang')
-  document.querySelector('.lang').querySelector('button').querySelector('svg').style.fill = 'white';
-  document.querySelector('.lang').querySelector('button').querySelector('div').style.color = 'white';
-  document.querySelector('nav').insertBefore(document.querySelector('.lang'), document.querySelector('nav').childNodes[2]);
-}, 3500);
+/*document.querySelector('button').remove();*/
 
 document.querySelector('h1').style.marginTop='20%';
 
@@ -125,41 +113,9 @@ document.querySelector('.searchInputG').addEventListener('keyup',function(){
 
 function mobileC(){
   window.onload = ()=>{
-  
-  document.querySelector('#root').style.background = 'url("./images/Fichier 17.svg")';
-  document.querySelector('#root').style.backgroundPositionX = 'center'
-  document.querySelector('#root').style.backgroundSize='cover';
-  document.querySelector('h1').remove();
-  document.querySelector('h2').remove();
 /*nav*/
-  document.querySelector('nav').style.backgroundColor='transparent';
-  window.setInterval(function(){document.querySelector('nav svg').style.width='120px';},5000);
   document.querySelector('nav').style.border='none';
-  document.querySelector('nav').lastChild.querySelector('button').style.backgroundColor= 'white';
-  document.querySelector('nav').lastChild.querySelector('button').style.color= '#312783';
-  document.querySelector('nav').lastChild.querySelector('button').style.fontWeight= 'normal';
-  document.querySelector('nav').lastChild.querySelector('button').style.letterSpacing= '0.11em';
-  document.querySelector('nav').lastChild.querySelector('button').innerText='Connect Wallet';
-
-
-
- /* const logoM = document.createElement('img');
-  logoM.setAttribute("src", "./images/GLENTY_WHITE_LOGO.png");
-  document.querySelector('nav').insertBefore(logoM, document.querySelector('nav').firstChild);
-  logoM.style.height='100%';
-  logoM.style.width='150px';
-  logoM.style.marginTop='10px';
- logoM.addEventListener('click',function(){
-    window.location.replace('/')
-  })*/
-  function price(){
-    setTimeout(document.querySelector('nav button').click(),2000);
-    document.querySelector('.price')?setTimeout(document.querySelector('#root').appendChild(document.querySelector('.price')), 3000):false
-    setTimeout(document.querySelector('nav button').click(), 3500);
-    setTimeout(  document.querySelector('nav button').remove(), 3700);
-}
-
- price();
+ 
   window.onscroll = function() {hideNav()};
 
   function hideNav() {
@@ -169,7 +125,6 @@ function mobileC(){
       document.querySelector("nav").style.display = "flex";
     }
   }}
-
   function createFooter(){
     /*footer*/
     const fixedFooter = document.createElement('div');
@@ -248,57 +203,47 @@ function mobileC(){
     const docsM = document.createElement('a');
     const githubM = document.createElement('a');
     const FarmsM = document.createElement('a');
-    const ipoM = document.createElement('a');
   
   
   
     docsM.classList.add('moreLinks');
     githubM.classList.add('moreLinks');
     FarmsM.classList.add('moreLinks');
-    ipoM.classList.add('moreLinks');
   
   
     githubM.setAttribute('href','https://github.com/glenty-protocol');
     docsM.setAttribute('href','https://glenty.gitbook.io/glenty/');
-    ipoM.setAttribute('href','https://glenty.com/ico');
     FarmsM.setAttribute('href','https://glenty.com/farms');
   
   
     const githubImg = document.createElement('img');
     const docsImg = document.createElement('img');
     const farmsImg = document.createElement('img');
-    const ipoImg = document.createElement('img');
   
   
     docsImg.setAttribute('src','./images/DOCS.svg');
-    ipoImg.setAttribute('src','./images/IPO.svg');
     farmsImg.setAttribute('src','./images/farms.svg');
     githubImg.setAttribute('src','./images/GITHUB.svg');
   
     docsImg.classList.add('footerImg');
-    ipoImg.classList.add('footerImg');
     farmsImg.classList.add('footerImg');
     githubImg.classList.add('footerImg');
   
     const githubT = document.createElement('p');
-    const ipoT = document.createElement('p');
     const docsT = document.createElement('p');
     const farmT = document.createElement('p');
   
     githubT.innerText='Github';
     docsT.innerText='Docs';
     farmT.innerText='Farms';
-    ipoT.innerText='IPO';
   
   
     githubM.appendChild(githubImg);
     docsM.appendChild(docsImg);
-    ipoM.appendChild(ipoImg);
     FarmsM.appendChild(farmsImg);
   
   
     githubM.appendChild(githubT);
-    ipoM.appendChild(ipoT);
     docsM.appendChild(docsT);
     FarmsM.appendChild(farmT);
   
@@ -308,7 +253,6 @@ function mobileC(){
     docsM.style.borderBottom='none';
   
     fixedMenuFooter.appendChild(FarmsM);
-    fixedMenuFooter.appendChild(ipoM);
     fixedMenuFooter.appendChild(githubM);
     fixedMenuFooter.appendChild(docsM);
   
@@ -339,10 +283,12 @@ function mobileC(){
         }
         })
   })
-
-
-  document.querySelector('svg').parentElement.addEventListener('click',function(){
-    window.location.replace("http://glenty.com");
-  })   
+  window.addEventListener("resize", function() {
+    window.innerWidth >= 1000 ? location.reload() : false
+  })
 }
 window.innerWidth < 900 ? mobileC() : false
+
+window.addEventListener("resize", function() {
+  window.innerWidth <= 1000 ? location.reload() : false
+})

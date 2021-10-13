@@ -43,7 +43,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     category: 'glenty',
     img:'./images/gigapoolIcons/TOP100_logo.svg',
-    lpSymbol: 'GLENTY-BNB LP',
+    lpSymbol: 'Top100',
     lpAddresses: {
       97: '',
       56: '0xfcdf033e55ca6a62300337d88da1810933a54f82',
@@ -1503,7 +1503,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 129,
+    pid: 1291,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',

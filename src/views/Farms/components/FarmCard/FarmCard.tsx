@@ -210,8 +210,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       </ExpandingWrapper>
       </div></>):(
         <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',padding:"5% 1%"}} className="coin">
-          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%',padding:'10px'}} src={farmImage} alt={farm.tokenSymbol} />
-          <div style={{color:'white',fontSize:'8pt',marginTop:'30%',textAlign:'left'}}>
+          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%'}} className='gigapoolimage' src={farmImage} alt={farm.tokenSymbol} />
+          <div style={{color:'white',fontSize:'8pt',marginTop:'30%',textAlign:'center'}}>
           {farm.tokenSymbol}
         </div>
         <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>

@@ -54,6 +54,7 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
             await onReward()
             setPendingTx(false)
           }}
+          className='harvestButton'
         >
           {TranslateString(999, 'Harvest')}
         </Button>
