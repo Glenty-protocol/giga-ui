@@ -41,8 +41,8 @@ const Farm: React.FC = () => {
 
   const poolsWithApy = pools.map((pool) => {
     const isBnbPool = pool.poolCategory === PoolCategory.BINANCE
-    const rewardTokenFarm = farms.find((f) => f.tokenSymbol === pool.tokenName)
-    const stakingTokenFarm = farms.find((s) => s.tokenSymbol === pool.stakingTokenName)
+    const rewardTokenFarm = farms.find((f) => f.lpSymbol === pool.tokenName)
+    const stakingTokenFarm = farms.find((s) => s.lpSymbol === pool.stakingTokenName)
 
     // /!\ Assume that the farm quote price is BNB
     const stakingTokenPriceInBNB = isBnbPool ? new BigNumber(1) : new BigNumber(stakingTokenFarm?.tokenPriceVsQuote)

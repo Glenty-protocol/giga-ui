@@ -4,7 +4,6 @@
 }
 #root{
   overflow-x: hidden !important;
-
 }
 .gigapoolimage{
   padding: 5px;
@@ -23,6 +22,7 @@ letter-spacing: 0.11em !important;
 }
 nav{
 transition: 0.4s !important;
+background: transparent !important;
 }
 #root{
 background : url("./images/GLENTYPOOL_background_Plan de travail 1 copie 8.svg") !important;
@@ -117,16 +117,7 @@ color: white;
 margin-bottom: 5%;
 text-align: center;
 }
-.grid-Glenty,.grid-Out{
-display:grid;
-  text-align:center;
-  align-items:center;
-  grid-template-columns:45% 45%;
-  width:100%;
-  margin:0 auto;
-  grid-gap:10%;
-  margin-bottom: 18vh;
-}
+.grid-Glenty,.grid-Out{display:grid;text-align:center;align-items:center;grid-template-columns:45% 45%;width:100%;margin:0 auto;grid-gap:10%;margin-bottom: 18vh;}
 .grid-Gigapool,.grid-Out{
 display:grid;
  text-align:center;
@@ -194,7 +185,7 @@ margin-top: 3%;
 }
 .glentyTop{
   background: none !important;
-  margin-top: 35%;
+  margin-top: 5%;
 }
 .headerTitle{
   margin-left: 0% !important;
@@ -209,10 +200,12 @@ margin-top: 3%;
 }
 .grid-Gigapool,.grid-Out{
   grid-template-columns: 80% !important;
-  justify-content: center;
-  margin-left: 0% !important;
-  width: 100% !important;
-  grid-row-gap: 10px !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 0.5% !important;
+    width: 100% !important;
+    grid-gap: 10px;
 }
 .glentyTop{
   margin-left: 0% !important;
@@ -221,12 +214,16 @@ margin-top: 3%;
 @media only screen and (max-width:400px){
 .glentyTop{
   background: none !important;
-  margin-top: 35%;
-  margin-left: -7% !important;
+  margin-top: 5%;
+  margin-left: -9% !important;
+  width: 95% !important;
   margin-right: 7%;
 }
 .gigapoolTop,.outTop{
-  margin-left: -7%;
+  background: none !important;
+  margin-top: 5%;
+  margin-left: -9% !important;
+  width: 95% !important;
   margin-right: 7%;
 }
 #loading img{
@@ -355,6 +352,9 @@ fill:rgb(218, 165, 32) !important;
 }
 @media only screen and (min-width:901px){
 .fixedFooter{display: none;}
+html{
+  zoom: 67%;
+}
 }
 
 button[aria-label='Toggle menu']{

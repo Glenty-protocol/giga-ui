@@ -134,7 +134,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     })
 
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
-
   return (
     <div style={{background:'rgb(40, 13, 95)',borderRadius:'25px'}}>
       {window.innerWidth>900?(<><CardHeading
@@ -169,14 +168,14 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         
          <Flex justifyContent="space-between" padding='0px 24px'>
          <Text style={{color:'white'}}>{TranslateString(318, 'Earn')}:</Text>
-         <MultiplierTag variant="secondary">{farm.multiplier}</MultiplierTag>
+         <MultiplierTag variant="secondary">x1</MultiplierTag>
  
  {/* <Text bold>{earnLabel}</Text> */}
        </Flex>
        <Flex justifyContent="space-between" padding='0px 24px'>
          <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
          <Text bold style={{ fontSize: '12pt',color:'white' }}>
-           {farm.depositFeeBP / 100}%
+           { /* farm.depositFeeBP / 100 */ 0 }%
          </Text>
        </Flex>
        <div style={{padding:'0px 24px'}}>
@@ -210,9 +209,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       </ExpandingWrapper>
       </div></>):(
         <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',padding:"5% 1%"}} className="coin">
-          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%'}} className='gigapoolimage' src={farmImage} alt={farm.tokenSymbol} />
+          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%'}} className='gigapoolimage' src={farmImage} alt={farm.lpSymbol} />
           <div style={{color:'white',fontSize:'8pt',marginTop:'30%',textAlign:'center'}}>
-          {farm.tokenSymbol}
+          {farm.lpSymbol}
         </div>
         <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
         APR:
@@ -222,7 +221,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
         Deposit Fee:
         <br />
-        {farm.depositFeeBP / 100}%
+        { /* farm.depositFeeBP / 100 */ 0 }%
         </div>
         <div style={{marginTop:'30%'}}>
         <ExpandableSectionButton

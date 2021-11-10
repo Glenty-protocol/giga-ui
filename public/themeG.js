@@ -1,24 +1,12 @@
 window.onload = ()=>{
-  document.querySelector('a').removeAttribute('href');
-  document.querySelector('a').style.cursor='pointer';
-  document.querySelector('a').addEventListener('click',function(){
-    window.location.replace('https://glenty.com')
-  })
+  
   window.onscroll = function() {myFunction()};
 
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector('nav').style.background = "url('./images/Fichier 8.svg')";
-    document.querySelector('nav').style.height='200px';
-    document.querySelector('nav').style.top='0px';
-    document.querySelector('nav a').style.height='100%';
-    document.querySelector(".price").style.top='200px';
-
   } else {
     document.querySelector('nav').style.background = "none";
-    document.querySelector('nav').style.height='100px';
-    document.querySelector('nav a').style.height='155%';
-    document.querySelector(".price").style.top='150px';
   }
 }
 
@@ -283,12 +271,20 @@ function mobileC(){
         }
         })
   })
-  window.addEventListener("resize", function() {
-    window.innerWidth >= 1000 ? location.reload() : false
-  })
+  
 }
 window.innerWidth < 900 ? mobileC() : false
 
-window.addEventListener("resize", function() {
-  window.innerWidth <= 1000 ? location.reload() : false
-})
+const windowWidth = window.innerWidth
+
+window.onresize = ()=>{
+  window.innerWidth !== windowWidth ? location.reload():false
+}
+
+setTimeout(function(){
+  document.querySelector('a').removeAttribute('href');
+  document.querySelector('a').style.cursor='pointer';
+  document.querySelector('a').addEventListener('click',function(){
+    window.location.replace('https://glenty.com')
+  })
+},7000)
