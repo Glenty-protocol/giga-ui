@@ -1356,7 +1356,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     category: 'gigapool',
     img:'./images/gigapoolIcons/decred-dcr-logo.svg',
-    lpSymbol: '',
+    lpSymbol: 'Decred',
     lpAddresses: {
       97: 'Decred',
       56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
@@ -1646,9 +1646,9 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
     },
-    tokenSymbol: '',
+    tokenSymbol: 'ENJ',
     tokenAddresses: {
-      97: 'ENJ',
+      97: '',
       56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
@@ -1665,9 +1665,9 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
     },
-    tokenSymbol: '',
+    tokenSymbol: 'PERP',
     tokenAddresses: {
-      97: 'PERP',
+      97: '',
       56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
