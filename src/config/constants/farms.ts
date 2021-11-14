@@ -19,39 +19,39 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
-    pid: 0,
+    pid: 41,
     risk: 5,
     isTokenOnly: true,
-    category: 'glenty',
-    img:'./images/gigapoolIcons/Fichier 1.svg',
-    lpSymbol: 'GLENTY',
+    lpSymbol: 'GLENTY-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe', // GLENTY-BUSD LP
+      56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe',
     },
     tokenSymbol: 'GLENTY',
     tokenAddresses: {
       97: '',
-      56: '0x97769506e36988d08745b64e78f66e37858f14e9',
+      56: '0x97769506e36988D08745b64E78F66E37858f14E9',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
+
+  /// new ones ///
   {
     pid: 1,
     risk: 5,
     isTokenOnly: true,
     category: 'glenty',
     img:'./images/gigapoolIcons/TOP100_logo.svg',
-    lpSymbol: 'Top100',
+    lpSymbol: 'GLENTY-BNB LP',
     lpAddresses: {
       97: '',
       56: '0xfcdf033e55ca6a62300337d88da1810933a54f82',
     },
-    tokenSymbol: 'Top 100',
+    tokenSymbol: 'GLENTY',
     tokenAddresses: {
       97: '',
-      56: '0x97769506e36988d08745b64e78f66e37858f14e9',
+      56: '0x97769506e36988D08745b64E78F66E37858f14E9',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -61,16 +61,54 @@ const farms: FarmConfig[] = [
     risk: 3,
     isTokenOnly: true,
     category: 'gigapool',
-    lpSymbol: 'Bitcoin',
+    lpSymbol: 'BNB-BUSD LP',
     img:'./images/gigapoolIcons/bitcoin-btc-logo.svg',
     lpAddresses: {
       97: '',
       56: '0x746c3c8c107e7a9f2930f46d860e9001cabf9706',
     },
+    tokenSymbol: 'BNB',
+    tokenAddresses: {
+      97: '',
+      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 0,
+    risk: 5,
+    isTokenOnly: true,
+    category: 'glenty',
+    img:'./images/gigapoolIcons/Fichier 1.svg',
+    lpSymbol: 'GLENTY',
+    lpAddresses: {
+      97: '',
+      56: '0x97769506e36988d08745b64e78f66e37858f14e9', // GLENTY-BUSD LP
+    },
+    tokenSymbol: 'GLENTY',
+    tokenAddresses: {
+      97: '',
+      56: '0x97769506e36988D08745b64E78F66E37858f14E9',
+    },
+    quoteTokenSymbol: QuoteToken.BUSD,
+    quoteTokenAdresses: contracts.busd,
+  },
+  {
+    pid: 3,
+    risk: 3,
+    isTokenOnly: true,
+    category: 'gigapool',
+    lpSymbol: 'Bitcoin',
+    img:'./images/gigapoolIcons/bitcoin-btc-logo.svg',
+    lpAddresses: {
+      97: '',
+      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+    },
     tokenSymbol: 'BTC',
     tokenAddresses: {
       97: '',
-      56: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
+      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -84,7 +122,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Ethereum',
     lpAddresses: {
       97: '',
-      56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe',
+      56: '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
     },
     tokenSymbol: 'ETH',
     tokenAddresses: {
@@ -114,14 +152,14 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 5,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
     lpSymbol: 'Tether',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'Tether',
     img:'./images/gigapoolIcons/tether-usdt-logo.svg',
@@ -133,7 +171,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 6,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -141,7 +179,7 @@ const farms: FarmConfig[] = [
     img:'./images/gigapoolIcons/binance-coin-bnb-logo.svg',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BNB',
     tokenAddresses: {
@@ -171,7 +209,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 15,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -179,7 +217,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Solana',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SOL',
     tokenAddresses: {
@@ -248,7 +286,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 33,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -256,7 +294,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Terra',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'LUNA',
     tokenAddresses: {
@@ -305,7 +343,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 11,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -313,7 +351,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Binance USD',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
@@ -343,7 +381,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 36,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -351,7 +389,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Algorand',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'ALGO',
     tokenAddresses: {
@@ -400,7 +438,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   }, 
   {
-    pid: 17,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -408,7 +446,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Wrapped Bitcoin',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'WBTC',
     tokenAddresses: {
@@ -457,7 +495,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 22,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -465,7 +503,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Polygon',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'MATIC',
     tokenAddresses: {
@@ -476,7 +514,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 23,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -484,7 +522,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Internet Computer',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'ICP',
     tokenAddresses: {
@@ -495,7 +533,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 25,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -503,7 +541,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'File Coin',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'FIL',
     tokenAddresses: {
@@ -533,7 +571,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 21,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -541,7 +579,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Stellar',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'XLM',
     tokenAddresses: {
@@ -552,7 +590,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 37,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -560,7 +598,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Ftx token',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'FTT',
     tokenAddresses: {
@@ -609,7 +647,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 26,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -617,7 +655,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'VeChain',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'VET',
     tokenAddresses: {
@@ -647,7 +685,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 24,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -655,7 +693,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'THETA',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'THETA',
     tokenAddresses: {
@@ -674,7 +712,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Bitcoin BEP2',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BTCB',
     tokenAddresses: {
@@ -704,7 +742,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 28,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -712,7 +750,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Monero',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'XMR',
     tokenAddresses: {
@@ -723,7 +761,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 57,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -731,7 +769,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Elrond',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'EGLD',
     tokenAddresses: {
@@ -761,7 +799,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 32,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -769,7 +807,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Crypto.com',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'MCO',
     tokenAddresses: {
@@ -819,7 +857,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 30,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -827,7 +865,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Aave',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'AAVE',
     tokenAddresses: {
@@ -838,7 +876,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 77,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -846,7 +884,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Quant',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'QNT',
     tokenAddresses: {
@@ -857,7 +895,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 50,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -865,7 +903,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Hedera Hashgraph',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'HBAR',
     tokenAddresses: {
@@ -933,7 +971,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 51,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -941,7 +979,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'The graph',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'GRT',
     tokenAddresses: {
@@ -952,7 +990,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 34,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -960,7 +998,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'SHIP INU',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SHIP',
     tokenAddresses: {
@@ -971,7 +1009,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 54,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -979,7 +1017,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Kusama',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'KSM',
     tokenAddresses: {
@@ -990,7 +1028,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 39,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -998,7 +1036,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Klaytn',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'KLAY',
     tokenAddresses: {
@@ -1009,7 +1047,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 44,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1017,7 +1055,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'NEO',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'NEO',
     tokenAddresses: {
@@ -1047,7 +1085,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 31,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1055,7 +1093,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'UNUS SED LEO',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'LEO',
     tokenAddresses: {
@@ -1066,7 +1104,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 56,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1074,7 +1112,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Waves',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'WAVES',
     tokenAddresses: {
@@ -1085,7 +1123,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 41,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1093,7 +1131,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Bitcoin SV',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BSV',
     tokenAddresses: {
@@ -1142,7 +1180,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 91,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1150,7 +1188,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'CELO',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'CELO',
     tokenAddresses: {
@@ -1180,7 +1218,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 49,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1188,7 +1226,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Amp',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'AMP',
     tokenAddresses: {
@@ -1199,7 +1237,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 71,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1207,7 +1245,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Helium',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'HNT',
     tokenAddresses: {
@@ -1218,7 +1256,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 70,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1226,7 +1264,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'XinFin Network',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'XDC',
     tokenAddresses: {
@@ -1237,7 +1275,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 88,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1245,7 +1283,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Harmony',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'ONE',
     tokenAddresses: {
@@ -1256,7 +1294,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 52,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1264,7 +1302,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Dash',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'DASH',
     tokenAddresses: {
@@ -1275,7 +1313,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 74,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1283,7 +1321,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Thorchain',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'RUNE',
     tokenAddresses: {
@@ -1294,7 +1332,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 59,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1302,7 +1340,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Chiliz',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'CHZ',
     tokenAddresses: {
@@ -1313,7 +1351,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 65,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1321,7 +1359,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Stacks',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'STX',
     tokenAddresses: {
@@ -1332,7 +1370,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 61,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1340,7 +1378,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'True USD',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'TUSD',
     tokenAddresses: {
@@ -1351,7 +1389,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 60,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1359,7 +1397,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Decred',
     lpAddresses: {
       97: 'Decred',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'DCR',
     tokenAddresses: {
@@ -1370,7 +1408,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 53,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1378,7 +1416,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Theta Fuel',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'TFUEL',
     tokenAddresses: {
@@ -1408,7 +1446,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 90,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1416,7 +1454,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Revain',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'REV',
     tokenAddresses: {
@@ -1427,7 +1465,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 76,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1435,7 +1473,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Holo',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'HOT',
     tokenAddresses: {
@@ -1465,7 +1503,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 75,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1473,7 +1511,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Sushiswap',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SUSHI',
     tokenAddresses: {
@@ -1484,7 +1522,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 63,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1492,7 +1530,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Nem',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'XEM',
     tokenAddresses: {
@@ -1503,7 +1541,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 1291,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1511,7 +1549,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OMG Network',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'OMG',
     tokenAddresses: {
@@ -1522,7 +1560,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 58,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1530,7 +1568,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Huobi Token',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'HT',
     tokenAddresses: {
@@ -1541,7 +1579,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 68,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1549,7 +1587,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Decentraland',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'MANA',
     tokenAddresses: {
@@ -1560,7 +1598,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 62,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1568,7 +1606,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Celsius',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'CEL',
     tokenAddresses: {
@@ -1617,7 +1655,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 129,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1625,7 +1663,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Ren',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'REN',
     tokenAddresses: {
@@ -1674,7 +1712,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 98,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1682,7 +1720,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Curve Dao',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'CRV',
     tokenAddresses: {
@@ -1693,7 +1731,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 133,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1701,7 +1739,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mina',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'MINA',
     tokenAddresses: {
@@ -1750,7 +1788,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 136,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1758,7 +1796,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Serum',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SRM',
     tokenAddresses: {
@@ -1769,7 +1807,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 83,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1777,7 +1815,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Flow',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'FLOW',
     tokenAddresses: {
@@ -1826,7 +1864,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 102,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1834,7 +1872,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Rave Coin',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'RVN',
     tokenAddresses: {
@@ -1864,7 +1902,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 95,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1872,7 +1910,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Qtum',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'QTUM',
     tokenAddresses: {
@@ -1883,7 +1921,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 85,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1891,7 +1929,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Bitcoin Gold',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BTG',
     tokenAddresses: {
@@ -1902,7 +1940,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 89,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1910,7 +1948,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'OKB',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'OKB',
     tokenAddresses: {
@@ -1921,7 +1959,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 86,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1929,7 +1967,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Tel coin',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'TEL',
     tokenAddresses: {
@@ -1940,7 +1978,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 80,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1948,7 +1986,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Kucoin Token',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'KCS',
     tokenAddresses: {
@@ -1978,7 +2016,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 78,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1986,7 +2024,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'NEXO',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'NEXO',
     tokenAddresses: {
@@ -1997,7 +2035,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 79,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2005,7 +2043,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Mandala Exchange',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'MDEX',
     tokenAddresses: {
@@ -2016,7 +2054,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 87,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2024,7 +2062,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Bancor',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'BNT',
     tokenAddresses: {
@@ -2035,7 +2073,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 106,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2043,7 +2081,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Horizen',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'ZEN',
     tokenAddresses: {
@@ -2054,7 +2092,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 101,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2062,7 +2100,7 @@ const farms: FarmConfig[] = [
     lpSymbol: '0x',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'ZRX',
     tokenAddresses: {
@@ -2073,7 +2111,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 110,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2081,7 +2119,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'renBTC',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'RENBTC',
     tokenAddresses: {
@@ -2092,7 +2130,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 97,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2100,7 +2138,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Siacoin',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SC',
     tokenAddresses: {
@@ -2111,7 +2149,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 109,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2119,7 +2157,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Raydium',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'RAY',
     tokenAddresses: {
@@ -2149,7 +2187,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 94,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2157,7 +2195,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Digibyte',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'DGB',
     tokenAddresses: {
@@ -2168,7 +2206,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 114,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2176,7 +2214,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Voyager Token',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'VGX',
     tokenAddresses: {
@@ -2187,7 +2225,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 99,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2195,7 +2233,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Swissborg',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'CHSB',
     tokenAddresses: {
@@ -2244,7 +2282,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 100,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2252,7 +2290,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'UMA',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'UMA',
     tokenAddresses: {
@@ -2263,7 +2301,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 118,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2271,7 +2309,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Fetch.ai',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'FET',
     tokenAddresses: {
@@ -2282,7 +2320,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 119,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2290,7 +2328,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Nano',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'NANO',
     tokenAddresses: {
@@ -2301,7 +2339,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 121,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2309,7 +2347,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'The Sandbox',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'SAND',
     tokenAddresses: {
@@ -2320,7 +2358,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
   {
-    pid: 122,
+    pid: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2328,7 +2366,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Kava',
     lpAddresses: {
       97: '',
-      56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+      56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
     },
     tokenSymbol: 'KAVA',
     tokenAddresses: {
