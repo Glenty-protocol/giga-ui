@@ -46,7 +46,6 @@ export const useFarmUser = (pid) => {
 }
 
 // Pools
-
 export const usePools = (account): Pool[] => {
   const { fastRefresh } = useRefresh()
   const dispatch = useDispatch()
@@ -68,19 +67,19 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 0 // BUSD-BNB LP
+  const pid = 2 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  // const pid = 1 // CAKE-BNB LP
-  // const bnbPriceUSD = usePriceBnbBusd()
-  // const farm = useFarmFromPid(pid)
-  // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  const pid = 1 // GLENTY-BUSD LP
+  const pid = 1 // CAKE-BNB LP
+  const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
-  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
+  return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
+  // const pid = 41 // GLENTY-BUSD LP
+  // const farm = useFarmFromPid(pid)
+  // return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const useTotalValue = (): BigNumber => {

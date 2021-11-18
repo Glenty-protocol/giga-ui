@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect, useCallback, useState } from 'react'
 import { Route, useRouteMatch } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -21,6 +22,24 @@ export interface FarmsProps {
   tokenMode?: boolean
 }
 
+function toFixed(x) {
+  if (Math.abs(x) < 1.0) {
+    let e = parseInt(x.toString().split('e-')[1]);
+    if (e) {
+        x *= Math.pow(10,e-1);
+        x = '0.' + (new Array(e)).join('0') + x.toString().substring(2);
+    }
+  } else {
+    let e = parseInt(x.toString().split('+')[1]);
+    if (e > 20) {
+        e -= 20;
+        x /= Math.pow(10,e);
+        x += (new Array(e+1)).join('0');
+    }
+  }
+  return x;
+}
+
 const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { path } = useRouteMatch()
   const TranslateString = useI18n()
@@ -30,6 +49,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
   const { account, ethereum }: { account: string; ethereum: provider } = useWallet()
   const { tokenMode } = farmsProps
 
+  // console.log('Cake Price ###: ', cakePrice.toFixed(5));
   const dispatch = useDispatch()
   const { fastRefresh } = useRefresh()
   useEffect(() => {
@@ -63,10 +83,12 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         const cakeRewardPerBlock = new BigNumber(farm.glentyPerBlock || 1)
           .times(new BigNumber(farm.poolWeight))
           .div(new BigNumber(10).pow(18))
+
+          console.log('cakeRewardPerBlock', cakeRewardPerBlock.toFixed(20));
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
         let apy = cakePrice.times(cakeRewardPerYear)
-
+        console.log('APY ###', apy);
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {

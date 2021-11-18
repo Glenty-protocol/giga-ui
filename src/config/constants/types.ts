@@ -50,6 +50,7 @@ export interface FarmConfig {
   category?: string
   multiplier?: string
   isTokenOnly?: boolean
+  isHidden?: boolean
   isCommunity?: boolean
   img?: string
   risk: number
