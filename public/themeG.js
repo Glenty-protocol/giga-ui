@@ -222,7 +222,7 @@ function mobileC(){
     const farmT = document.createElement('p');
   
     githubT.innerText='Github';
-    docsT.innerText='Docs';
+    docsT.innerText='White Paper';
     farmT.innerText='Farms';
   
   
