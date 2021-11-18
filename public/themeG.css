@@ -77,20 +77,12 @@ margin-left: -8%;
 
 .dropiv:hover .dropdown-content {display: block;}
 .price{
-  position: absolute;
-  top: 150px;
-  left:0;
-  padding: 15px 25px !important;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background: url('./images/gradient_price.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  display: none !important;
   }
-    .price div{
+    /*.price div{
       color: white;
       font-size: 20pt;
-    }
+    }*/
     .socialL{
       bottom: 20px;
       right: 20px;

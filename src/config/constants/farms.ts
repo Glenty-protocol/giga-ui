@@ -22,6 +22,7 @@ const farms: FarmConfig[] = [
   // },
   {
     pid: 1,
+    id: 1,
     risk: 5,
     isTokenOnly: false,
     lpSymbol: 'GLENTY-BNB LP',
@@ -39,6 +40,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 2,
+    id: 2,
     risk: 3,
     isTokenOnly: false,
     lpSymbol: 'BNB-BUSD LP',
@@ -57,6 +59,7 @@ const farms: FarmConfig[] = [
     /// new ones ///
   { //!
     pid: 0,
+    id: 0,
     risk: 5,
     isTokenOnly: true,
     category: 'glenty',
@@ -76,6 +79,7 @@ const farms: FarmConfig[] = [
   },
   {//!
     pid: 4,
+    id: 4,
     risk: 3,
     isTokenOnly: true,
     category: 'gigapool',
@@ -95,6 +99,7 @@ const farms: FarmConfig[] = [
   },
   {//
     pid: 5,
+    id: 5,
     risk: 3,
     isTokenOnly: true,
     category: 'gigapool',
@@ -114,6 +119,7 @@ const farms: FarmConfig[] = [
   },
   {//
     pid: 6,
+    id: 6,
     risk: 3,
     isTokenOnly: true,
     category: 'gigapool',
@@ -133,6 +139,7 @@ const farms: FarmConfig[] = [
   },
   {//
     pid: 7,
+    id: 7,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -173,6 +180,7 @@ const farms: FarmConfig[] = [
 
   {//
     pid: 8,
+    id: 8,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -192,6 +200,7 @@ const farms: FarmConfig[] = [
   },
    {//
     pid: 9,
+    id: 9,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -212,6 +221,7 @@ const farms: FarmConfig[] = [
 
   {//
     pid: 10,
+    id: 10,
     risk: 5,
     isTokenOnly: true,
     lpSymbol: 'Doge Coin',
@@ -231,6 +241,7 @@ const farms: FarmConfig[] = [
   },
     {//
       pid: 12,
+      id: 12,
       risk: 5,
       isTokenOnly: true,
       category: 'gigapool',
@@ -250,6 +261,7 @@ const farms: FarmConfig[] = [
     },
    {//
     pid: 13,
+    id: 13,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -269,6 +281,7 @@ const farms: FarmConfig[] = [
   },
     {//
       pid: 14,
+      id: 14,
       risk: 5,
       isTokenOnly: true,
       category: 'gigapool',
@@ -288,6 +301,7 @@ const farms: FarmConfig[] = [
     }, 
   {//
     pid: 16,
+    id: 16,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -326,6 +340,7 @@ const farms: FarmConfig[] = [
   // },
   {//
     pid: 20,
+    id: 20,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -378,6 +393,7 @@ const farms: FarmConfig[] = [
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     pid: 40,
+    id: 40,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -397,6 +413,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 41,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -416,6 +433,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 42,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -436,6 +454,7 @@ const farms: FarmConfig[] = [
  
   {
     pid: 40,
+    id: 43,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -456,6 +475,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 44,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -476,6 +496,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 45,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -496,6 +517,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 46,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -515,6 +537,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 47,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -534,6 +557,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 48,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -554,6 +578,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 49,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -573,6 +598,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 50,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -593,6 +619,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 51,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -613,6 +640,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 52,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -632,6 +660,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 53,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -652,6 +681,7 @@ const farms: FarmConfig[] = [
  
   {
     pid: 40,
+    id: 54,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -671,6 +701,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 55,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -691,6 +722,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 56,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -711,6 +743,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 57,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -730,6 +763,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 58,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -749,6 +783,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 59,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -768,6 +803,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 60,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -787,6 +823,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 61,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -806,6 +843,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 62,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -825,6 +863,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 63,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -844,6 +883,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 64,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -863,6 +903,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 65,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -882,6 +923,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 66,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -901,6 +943,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 67,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -921,6 +964,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 68,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -941,6 +985,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 69,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -960,6 +1005,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 70,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -979,6 +1025,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 71,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -998,6 +1045,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 72,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1017,6 +1065,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 73,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1036,6 +1085,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 74,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1055,6 +1105,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 75,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1074,6 +1125,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 76,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1093,6 +1145,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 77,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1112,6 +1165,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 78,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1131,6 +1185,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 79,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1151,6 +1206,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 80,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1170,6 +1226,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 81,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1189,6 +1246,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 82,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1208,6 +1266,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 83,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1227,6 +1286,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 84,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1246,6 +1306,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 85,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1265,6 +1326,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 86,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1284,6 +1346,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 87,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1303,6 +1366,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 88,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1323,6 +1387,7 @@ const farms: FarmConfig[] = [
   
   {
     pid: 40,
+    id: 89,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1342,6 +1407,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 90,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1362,6 +1428,7 @@ const farms: FarmConfig[] = [
   
   {
     pid: 40,
+    id: 91,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1381,6 +1448,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 92,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1401,6 +1469,7 @@ const farms: FarmConfig[] = [
   
   {
     pid: 40,
+    id: 93,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1421,6 +1490,7 @@ const farms: FarmConfig[] = [
  
   {
     pid: 40,
+    id: 94,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1440,6 +1510,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 95,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1459,6 +1530,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 96,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1478,6 +1550,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 97,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1497,6 +1570,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 98,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',
@@ -1517,6 +1591,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 99,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1536,6 +1611,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 100,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1555,6 +1631,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 101,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1574,6 +1651,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 102,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1593,6 +1671,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 103,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1612,6 +1691,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 104,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1631,6 +1711,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 105,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1650,6 +1731,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 106,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1670,6 +1752,7 @@ const farms: FarmConfig[] = [
  
   {
     pid: 40,
+    id: 107,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1689,6 +1772,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 108,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1708,6 +1792,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 109,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1728,6 +1813,7 @@ const farms: FarmConfig[] = [
 
   {
     pid: 40,
+    id: 110,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1747,6 +1833,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 111,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1766,6 +1853,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 112,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1785,6 +1873,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 113,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -1804,6 +1893,7 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 40,
+    id: 114,
     risk: 5,
     isTokenOnly: true,
     category: 'outsiders',
@@ -2026,6 +2116,7 @@ const farms: FarmConfig[] = [
   // },
   {//
     pid: 27,
+    id: 27,
     risk: 5,
     isTokenOnly: true,
     category: 'gigapool',

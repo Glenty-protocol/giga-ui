@@ -73,7 +73,7 @@ const docsl = document.createElement("a")
  window.setInterval(function(){
   if(true){
       socialL.classList.add('socialL');
-  document.querySelector('#root').appendChild(document.querySelector('.socialL'));
+  document.querySelector('#root').appendChild(document.querySelector('.socialL').parentElement);
   }
 }, 2000);
 /*document.querySelector('button').remove();*/
