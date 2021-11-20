@@ -28,8 +28,8 @@ interface FarmCardActionsProps {
 const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }) => {
   const TranslateString = useI18n()
   const [requestedApproval, setRequestedApproval] = useState(false)
-  const { pid, lpAddresses, tokenAddresses, isTokenOnly, depositFeeBP } = useFarmFromPid(farm.pid)
-  const { allowance, tokenBalance, stakedBalance, earnings } = useFarmUser(pid)
+  const { id, lpAddresses, tokenAddresses, isTokenOnly, depositFeeBP } = useFarmFromPid(farm.id)
+  const { allowance, tokenBalance, stakedBalance, earnings } = useFarmUser(id)
   const lpAddress = lpAddresses[process.env.REACT_APP_CHAIN_ID]
   const tokenAddress = tokenAddresses[process.env.REACT_APP_CHAIN_ID]
   const lpName = farm.lpSymbol.toUpperCase()
@@ -60,7 +60,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
         stakedBalance={stakedBalance}
         tokenBalance={tokenBalance}
         tokenName={lpName}
-        pid={pid}
+        pid={id}
         depositFeeBP={depositFeeBP}
       />
     ) : (
@@ -81,7 +81,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
           {TranslateString(999, 'Earned')}
         </Text>
       </Flex>
-      <HarvestAction earnings={earnings} pid={pid} />
+      <HarvestAction earnings={earnings} pid={id} />
       <Flex>
         <Text bold textTransform="uppercase" color="white" fontSize="12px" pr="3px">
           {lpName}

@@ -24,8 +24,8 @@ export const useFarms = (): Farm[] => {
   return farms
 }
 
-export const useFarmFromPid = (pid): Farm => {
-  const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))
+export const useFarmFromPid = (id): Farm => {
+  const farm = useSelector((state: State) => state.farms.data.find((f) => f.id === id))
   return farm
 }
 
@@ -34,8 +34,8 @@ export const useFarmFromSymbol = (lpSymbol: string): Farm => {
   return farm
 }
 
-export const useFarmUser = (pid) => {
-  const farm = useFarmFromPid(pid)
+export const useFarmUser = (id) => {
+  const farm = useFarmFromPid(id)
 
   return {
     allowance: farm.userData ? new BigNumber(farm.userData.allowance) : new BigNumber(0),
@@ -67,15 +67,15 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 2 // BUSD-BNB LP
-  const farm = useFarmFromPid(pid)
+  const id = 2 // BUSD-BNB LP
+  const farm = useFarmFromPid(id)
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const pid = 1 // CAKE-BNB LP
+  const id = 1 // CAKE-BNB LP
   const bnbPriceUSD = usePriceBnbBusd()
-  const farm = useFarmFromPid(pid)
+  const farm = useFarmFromPid(id)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
   // const pid = 41 // GLENTY-BUSD LP
   // const farm = useFarmFromPid(pid)

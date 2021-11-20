@@ -84,11 +84,11 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           .times(new BigNumber(farm.poolWeight))
           .div(new BigNumber(10).pow(18))
 
-          console.log('cakeRewardPerBlock', cakeRewardPerBlock.toFixed(20));
+         // console.log('cakeRewardPerBlock', cakeRewardPerBlock.toFixed(20));
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
         let apy = cakePrice.times(cakeRewardPerYear)
-        console.log('APY ###', apy);
+        //console.log('APY ###', apy);
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
 
         if (farm.quoteTokenSymbol === QuoteToken.BNB) {
@@ -103,7 +103,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       })
       return farmsToDisplayWithAPY.map((farm) => (
         <FarmCard
-          key={farm.pid}
+          key={farm.id}
           farm={farm}
           removed={removed}
           bnbPrice={bnbPrice}

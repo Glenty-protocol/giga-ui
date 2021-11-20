@@ -175,7 +175,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
        <Flex justifyContent="space-between" padding='0px 24px'>
          <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
          <Text bold style={{ fontSize: '12pt',color:'white' }}>
-           { /* farm.depositFeeBP / 100 */ 0 }%
+           { farm.depositFeeBP / 100}%
          </Text>
        </Flex>
        <div style={{padding:'0px 24px'}}>
@@ -221,7 +221,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
         Deposit Fee:
         <br />
-        { /* farm.depositFeeBP / 100 */ 0 }%
+        {farm.depositFeeBP / 100 }%
         </div>
         <div style={{marginTop:'30%'}}>
         <ExpandableSectionButton
