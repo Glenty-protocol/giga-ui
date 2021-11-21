@@ -181,8 +181,11 @@ function mobileC(){
     fixedFooter.appendChild(gigapoolM);
     fixedFooter.appendChild(Top100M);
     fixedFooter.appendChild(MoreM);
-    document.querySelector('#root').appendChild(fixedFooter);
-  }
+    document.querySelector('body').appendChild(fixedFooter);
+    document.querySelector('#root').addEventListener('click',function(){
+    document.querySelector('.moreMenu').style.display='none'
+    })
+    }
   
   function createMenuFooter(){
     /*footer*/
