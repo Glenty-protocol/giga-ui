@@ -294,7 +294,7 @@ background-size: cover;
 }
 .moreLinks{
 display: grid;
-grid-template-columns: 15% 15%;
+grid-template-columns: 15% 35%;
 text-align: center;
 justify-content: center;
 padding-top: 40px;
