@@ -348,3 +348,12 @@ html{
 button[aria-label='Toggle menu']{
 display: none !important;
 }
+.earned button,.earned .removeearned{
+  display: none !important;
+}
+.earned h2{
+  font-size: 8pt !important;
+  width:100%;
+  text-align: center;
+  margin-top: -20%;
+}

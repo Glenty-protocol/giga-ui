@@ -218,10 +218,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
         <br />
         {farmAPY}%
         </div>
-        <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
-        Deposit Fee:
-        <br />
-        {farm.depositFeeBP / 100 }%
+        <div className='earned' style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
+          Earned:
+        <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
         </div>
         <div style={{marginTop:'30%'}}>
         <ExpandableSectionButton
@@ -231,13 +230,13 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
       </div>
       <div style={{marginBottom:'10px',width:"500%"}}>
       <ExpandingWrapper expanded={showExpandableSection}>
-      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
-      {/* <Flex justifyContent="space-between">
+      <Flex justifyContent="space-between" marginTop='20px'>
          <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
          <Text bold style={{ fontSize: '12pt',color:'white' }}>
            {farm.depositFeeBP / 100}%
          </Text>
-      </Flex> */}
+      </Flex> 
+      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
         <DetailsSection
           removed={removed}
           isTokenOnly={farm.isTokenOnly}

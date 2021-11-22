@@ -3,23 +3,24 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-  // {
-  //   pid: 41,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   lpSymbol: 'GLENTY-BUSD LP',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe',
-  //   },
-  //   tokenSymbol: 'GLENTY',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x97769506e36988D08745b64E78F66E37858f14E9',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 41,
+  id:410,
+  risk: 5,
+  isTokenOnly: true,
+  lpSymbol: 'GLENTY-BUSD LP',
+  lpAddresses: {
+    97: '',
+    56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe',
+  },
+  tokenSymbol: 'GLENTY',
+  tokenAddresses: {
+    97: '',
+    56: '0x97769506e36988D08745b64E78F66E37858f14E9',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
   {
     pid: 1,
     id: 1,
@@ -77,6 +78,26 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
+  /*{
+    pid: 3,
+    id:1010,
+    risk: 5,
+    isTokenOnly: true,
+    category: 'glenty',
+    img:'./images/gigapoolIcons/TOP100_logo.svg',
+    lpSymbol: 'Top100',
+    lpAddresses: {
+      97: '',
+      56: '0xfcdf033e55ca6a62300337d88da1810933a54f82',
+    },
+    tokenSymbol: 'Top 100',
+    tokenAddresses: {
+      97: '',
+      56: '0x97769506e36988d08745b64e78f66e37858f14e9',
+    },
+    quoteTokenSymbol: QuoteToken.BNB,
+    quoteTokenAdresses: contracts.wbnb,
+  },*/
   {//!
     pid: 4,
     id: 4,
@@ -158,25 +179,26 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
  
-  // {
-  //   pid: 14,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/litecoin-ltc-logo.svg',
-  //   lpSymbol: 'Litecoin',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'LTC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 14,
+  id:1411,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/litecoin-ltc-logo.svg',
+  lpSymbol: 'Litecoin',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'LTC',
+  tokenAddresses: {
+    97: '',
+    56: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
 
   {//
     pid: 8,
@@ -319,25 +341,26 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  // {
-  //   pid: 19,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/XVS.png',
-  //   lpSymbol: 'Venus DAI',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'vDAI',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 19,
+  id:190,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/XVS.png',
+  lpSymbol: 'Venus DAI',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'vDAI',
+  tokenAddresses: {
+    97: '',
+    56: '0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
   {//
     pid: 20,
     id: 20,
@@ -359,25 +382,26 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
  
-  // {
-  //   pid: 20,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/ethereum-classic-etc-logo.svg',
-  //   lpSymbol: 'Ethereum Classic',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ETC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x3d6545b08693dae087e957cb1180ee38b9e3c25e',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 20,
+  id:201,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/ethereum-classic-etc-logo.svg',
+  lpSymbol: 'Ethereum Classic',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ETC',
+  tokenAddresses: {
+    97: '',
+    56: '0x3d6545b08693dae087e957cb1180ee38b9e3c25e',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
 
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1922,198 +1946,208 @@ const farms: FarmConfig[] = [
            ////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  // {
-  //   pid: 48,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/avalanche-avax-logo.svg',
-  //   lpSymbol: 'Avalanche',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'AVAX',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 48,
+  id:480,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/avalanche-avax-logo.svg',
+  lpSymbol: 'Avalanche',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'AVAX',
+  tokenAddresses: {
+    97: '',
+    56: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
  
-  // {
-  //   pid: 42,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/cosmos-atom-logo.svg',
-  //   lpSymbol: 'Cosmos',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ATOM',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x0eb3a705fc54725037cc9e008bdede697f62f335',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 123,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/multi-collateral-dai-dai-logo.svg',
-  //   lpSymbol: 'Dai',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'DAI',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 45,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/tezos-xtz-logo.svg',
-  //   lpSymbol: 'Tezos',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'XTZ',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x16939ef78684453bfdfb47825f8a5f714f12623a',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 124,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/download.jpg',
-  //   lpSymbol: 'eCash',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'XEC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x0ef2e7602add1733bfdb17ac3094d0421b502ca3',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 35,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/pancakeswap-cake-logo.svg',
-  //   lpSymbol: 'Pancakeswap',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'Cake',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 66,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/axie-sold.png',
-  //   lpSymbol: 'Axie Infinity',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'AXS',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x715d400f88c167884bbcc41c5fea407ed4d2f8a0',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+{
+  pid: 42,
+  id:420,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/cosmos-atom-logo.svg',
+  lpSymbol: 'Cosmos',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ATOM',
+  tokenAddresses: {
+    97: '',
+    56: '0x0eb3a705fc54725037cc9e008bdede697f62f335',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 123,
+  id:1230,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/multi-collateral-dai-dai-logo.svg',
+  lpSymbol: 'Dai',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'DAI',
+  tokenAddresses: {
+    97: '',
+    56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 45,
+  id:450,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/tezos-xtz-logo.svg',
+  lpSymbol: 'Tezos',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'XTZ',
+  tokenAddresses: {
+    97: '',
+    56: '0x16939ef78684453bfdfb47825f8a5f714f12623a',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 124,
+  id:1240,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/download.jpg',
+  lpSymbol: 'eCash',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'XEC',
+  tokenAddresses: {
+    97: '',
+    56: '0x0ef2e7602add1733bfdb17ac3094d0421b502ca3',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 35,
+  id:350,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/pancakeswap-cake-logo.svg',
+  lpSymbol: 'Pancakeswap',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'Cake',
+  tokenAddresses: {
+    97: '',
+    56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 66,
+  id:660,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/axie-sold.png',
+  lpSymbol: 'Axie Infinity',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'AXS',
+  tokenAddresses: {
+    97: '',
+    56: '0x715d400f88c167884bbcc41c5fea407ed4d2f8a0',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
  
-  // {
-  //   pid: 29,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/eos-eos-logo.svg',
-  //   lpSymbol: 'EOS',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'EOS',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 82,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/near-protocol-near-logo.svg',
-  //   lpSymbol: 'Near Protocol',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'NEAR',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1fa4a73a3f0133f0025378af00236f3abdee5d63',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 125,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/fantom-ftm-logo.svg',
-  //   lpSymbol: 'Fantom',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'FTM',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xad29abb318791d579433d831ed122afeaf29dcfe',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+{
+  pid: 29,
+  id:290,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/eos-eos-logo.svg',
+  lpSymbol: 'EOS',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'EOS',
+  tokenAddresses: {
+    97: '',
+    56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 82,
+  id:820,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/near-protocol-near-logo.svg',
+  lpSymbol: 'Near Protocol',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'NEAR',
+  tokenAddresses: {
+    97: '',
+    56: '0x1fa4a73a3f0133f0025378af00236f3abdee5d63',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 125,
+  id:1250,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/fantom-ftm-logo.svg',
+  lpSymbol: 'Fantom',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'FTM',
+  tokenAddresses: {
+    97: '',
+    56: '0xad29abb318791d579433d831ed122afeaf29dcfe',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
   {//
     pid: 27,
     id: 27,
@@ -2135,368 +2169,387 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
 
-  // {
-  //   pid: 43,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/UST2.png',
-  //   lpSymbol: 'TerraUSD',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'UST',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 126,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/maker-mkr-logo.svg',
-  //   lpSymbol: 'Maker',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'MKR',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x5f0da599bb2cccfcf6fdfd7d81743b6020864350',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 55,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/bittorrent-btt-logo.svg',
-  //   lpSymbol: 'Bittorent',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'BTT',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x8595f9da7b868b1822194faed312235e43007b49',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 46,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/compound-comp-logo.svg',
-  //   lpSymbol: 'Compound',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'COMP',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x52ce071bd9b1c4b00a0b92d298c512478cad67e8',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 128,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/arweave-ar-logo.svg',
-  //   lpSymbol: 'Arweave',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'AR',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xa142182D9Be18F300F42cca82660d274EED5eBBa',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 64,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/zcash-zec-logo.svg',
-  //   lpSymbol: 'ZCash',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ZEC',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+/* {
+  pid: 43,
+  id:430,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/UST2.png',
+  lpSymbol: 'TerraUSD',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'UST',
+  tokenAddresses: {
+    97: '',
+    56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 126,
+  id:1260,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/maker-mkr-logo.svg',
+  lpSymbol: 'Maker',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'MKR',
+  tokenAddresses: {
+    97: '',
+    56: '0x5f0da599bb2cccfcf6fdfd7d81743b6020864350',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 55,
+  id:550,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/bittorrent-btt-logo.svg',
+  lpSymbol: 'Bittorent',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'BTT',
+  tokenAddresses: {
+    97: '',
+    56: '0x8595f9da7b868b1822194faed312235e43007b49',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 46,
+  id:460,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/compound-comp-logo.svg',
+  lpSymbol: 'Compound',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'COMP',
+  tokenAddresses: {
+    97: '',
+    56: '0x52ce071bd9b1c4b00a0b92d298c512478cad67e8',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 128,
+  id:1280,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/arweave-ar-logo.svg',
+  lpSymbol: 'Arweave',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'AR',
+  tokenAddresses: {
+    97: '',
+    56: '0xa142182D9Be18F300F42cca82660d274EED5eBBa',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 64,
+  id:640,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/zcash-zec-logo.svg',
+  lpSymbol: 'ZCash',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ZEC',
+  tokenAddresses: {
+    97: '',
+    56: '0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
 
-  // {
-  //   pid: 69,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/synthetix-network-token-snx-logo.svg',
-  //   lpSymbol: 'Synthetix Network',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'SNX',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x9ac983826058b8a9c7aa1c9171441191232e8404',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 67,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/yearn-finance-yfi-logo.svg',
-  //   lpSymbol: 'Yearn Finance',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'YFI',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 72,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/enjin-coin-enj-logo.svg',
-  //   lpSymbol: 'Enjin Coin',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ENJ',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 130,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/60c86af9254af11894ff971b_export.png',
-  //   lpSymbol: 'Perpetual Protocol',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'PERP',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 134,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/icon-icx-logo.svg',
-  //   lpSymbol: 'ICON',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ICX',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x587c3de49bfb8bcf3ea56b0e45eed6d5620c6044',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 135,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/iostoken-iost-logo.svg',
-  //   lpSymbol: 'IOST',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'IOST',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x519663c084e760a6af43549897219f539c902532',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 137,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/1_6u6SfjGCCZmKs69C83N-mw.png',
-  //   lpSymbol: 'Celer Network',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'CELR',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x1f9f6a696c6fd109cd3956f45dc709d2b3902163',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 84,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/zilliqa-zil-logo.svg',
-  //   lpSymbol: 'Zilliqa',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ZIL',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xb86abcb37c3a4b64f74f59301aff131a1becc787',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 138,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'gigapool',
-  //   img:'./images/gigapoolIcons/Pax_Dollar.png',
-  //   lpSymbol: 'Pax Dollar',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'USDP',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xb3c11196a4f3b1da7c23d9fb0a3dde9c6340934f',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 140,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'outsiders',
-  //   img:'./images/gigapoolIcons/AudiusCoinLogo_2x.png',
-  //   lpSymbol: 'Audius',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'AUDIO',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xb4e2da2116412bb287d014424a9e92c1475fe6fa',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  //  {
-  //   pid: 93,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'outsiders',
-  //   img:'./images/gigapoolIcons/ontology-ont-logo.svg',
-  //   lpSymbol: 'Ontology',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ONT',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xfd7b3a77848f1c2d67e05e54d78d174a0c850335',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 116,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'outsiders',
-  //   img:'./images/gigapoolIcons/ankr-ankr-logo.svg',
-  //   lpSymbol: 'Ankr',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'ANKR',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xf307910a4c7bbc79691fd374889b36d8531b08e3',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
-  // {
-  //   pid: 117,
-  //   risk: 5,
-  //   isTokenOnly: true,
-  //   category: 'outsiders',
-  //   img:'./images/gigapoolIcons/iotex-iotx-logo.svg',
-  //   lpSymbol: 'IoTeX',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
-  //   },
-  //   tokenSymbol: 'IOTX',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0x9678e42cebeb63f23197d726b29b1cb20d0064e5',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+{
+  pid: 69,
+  id:690,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/synthetix-network-token-snx-logo.svg',
+  lpSymbol: 'Synthetix Network',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'SNX',
+  tokenAddresses: {
+    97: '',
+    56: '0x9ac983826058b8a9c7aa1c9171441191232e8404',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 67,
+  id:670,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/yearn-finance-yfi-logo.svg',
+  lpSymbol: 'Yearn Finance',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'YFI',
+  tokenAddresses: {
+    97: '',
+    56: '0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 72,
+  id:720,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/enjin-coin-enj-logo.svg',
+  lpSymbol: 'Enjin Coin',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ENJ',
+  tokenAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 130,
+  id:1300,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/60c86af9254af11894ff971b_export.png',
+  lpSymbol: 'Perpetual Protocol',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'PERP',
+  tokenAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 134,
+  id:1340,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/icon-icx-logo.svg',
+  lpSymbol: 'ICON',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ICX',
+  tokenAddresses: {
+    97: '',
+    56: '0x587c3de49bfb8bcf3ea56b0e45eed6d5620c6044',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 135,
+  id:1350,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/iostoken-iost-logo.svg',
+  lpSymbol: 'IOST',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'IOST',
+  tokenAddresses: {
+    97: '',
+    56: '0x519663c084e760a6af43549897219f539c902532',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 137,
+  id:1370,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/1_6u6SfjGCCZmKs69C83N-mw.png',
+  lpSymbol: 'Celer Network',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'CELR',
+  tokenAddresses: {
+    97: '',
+    56: '0x1f9f6a696c6fd109cd3956f45dc709d2b3902163',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 84,
+  id:840,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/zilliqa-zil-logo.svg',
+  lpSymbol: 'Zilliqa',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ZIL',
+  tokenAddresses: {
+    97: '',
+    56: '0xb86abcb37c3a4b64f74f59301aff131a1becc787',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 138,
+  id:1380,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'gigapool',
+  img:'./images/gigapoolIcons/Pax_Dollar.png',
+  lpSymbol: 'Pax Dollar',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'USDP',
+  tokenAddresses: {
+    97: '',
+    56: '0xb3c11196a4f3b1da7c23d9fb0a3dde9c6340934f',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 140,
+  id:1400,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'outsiders',
+  img:'./images/gigapoolIcons/AudiusCoinLogo_2x.png',
+  lpSymbol: 'Audius',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'AUDIO',
+  tokenAddresses: {
+    97: '',
+    56: '0xb4e2da2116412bb287d014424a9e92c1475fe6fa',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+ {
+  pid: 93,
+  id:930,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'outsiders',
+  img:'./images/gigapoolIcons/ontology-ont-logo.svg',
+  lpSymbol: 'Ontology',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ONT',
+  tokenAddresses: {
+    97: '',
+    56: '0xfd7b3a77848f1c2d67e05e54d78d174a0c850335',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 116,
+  id:1160,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'outsiders',
+  img:'./images/gigapoolIcons/ankr-ankr-logo.svg',
+  lpSymbol: 'Ankr',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'ANKR',
+  tokenAddresses: {
+    97: '',
+    56: '0xf307910a4c7bbc79691fd374889b36d8531b08e3',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+},
+{
+  pid: 117,
+  id:1170,
+  risk: 5,
+  isTokenOnly: true,
+  category: 'outsiders',
+  img:'./images/gigapoolIcons/iotex-iotx-logo.svg',
+  lpSymbol: 'IoTeX',
+  lpAddresses: {
+    97: '',
+    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+  },
+  tokenSymbol: 'IOTX',
+  tokenAddresses: {
+    97: '',
+    56: '0x9678e42cebeb63f23197d726b29b1cb20d0064e5',
+  },
+  quoteTokenSymbol: QuoteToken.BUSD,
+  quoteTokenAdresses: contracts.busd,
+}, */
 ]
 
 export default farms
