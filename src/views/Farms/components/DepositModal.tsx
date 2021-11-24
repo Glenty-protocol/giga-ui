@@ -48,6 +48,7 @@ const DepositModal: React.FC<DepositModalProps> = ({ max, onConfirm, onDismiss, 
           {TranslateString(462, 'Cancel')}
         </Button>
         <Button
+          style={{background:'rgb(218, 165, 32)'}}
           disabled={pendingTx}
           onClick={async () => {
             setPendingTx(true)
