@@ -3,24 +3,6 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-/* {
-  pid: 41,
-  id:410,
-  risk: 5,
-  isTokenOnly: true,
-  lpSymbol: 'GLENTY-BUSD LP',
-  lpAddresses: {
-    97: '',
-    56: '0x7a5d6a465950b7631a975cf4b9581e96dadbbffe',
-  },
-  tokenSymbol: 'GLENTY',
-  tokenAddresses: {
-    97: '',
-    56: '0x97769506e36988D08745b64E78F66E37858f14E9',
-  },
-  quoteTokenSymbol: QuoteToken.BUSD,
-  quoteTokenAdresses: contracts.busd,
-}, */
   {
     pid: 1,
     id: 1,
@@ -78,8 +60,8 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  /*{
-    pid: 3,
+  {
+    pid: 42,
     id:1010,
     risk: 5,
     isTokenOnly: true,
@@ -88,16 +70,16 @@ const farms: FarmConfig[] = [
     lpSymbol: 'Top100',
     lpAddresses: {
       97: '',
-      56: '0xfcdf033e55ca6a62300337d88da1810933a54f82',
+      56: '0xa8a4df11e38c6ef79f65f22fa0a8ae0cc267637b',
     },
     tokenSymbol: 'Top 100',
     tokenAddresses: {
       97: '',
-      56: '0x97769506e36988d08745b64e78f66e37858f14e9',
+      56: '0xa8a4df11e38c6ef79f65f22fa0a8ae0cc267637b',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
-  },*/
+  },
   {//!
     pid: 4,
     id: 4,
@@ -179,8 +161,8 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
  
-/* {
-  pid: 14,
+ {
+  pid: 43,
   id:1411,
   risk: 5,
   isTokenOnly: true,
@@ -189,7 +171,7 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Litecoin',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x4338665cbb7b2485a8855a139b75d5e34ab0db94', // GLENTY-BUSD LP
   },
   tokenSymbol: 'LTC',
   tokenAddresses: {
@@ -198,7 +180,7 @@ const farms: FarmConfig[] = [
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
-}, */
+},
 
   {//
     pid: 8,
@@ -341,8 +323,8 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-/* {
-  pid: 19,
+ {
+  pid: 44,
   id:190,
   risk: 5,
   isTokenOnly: true,
@@ -351,7 +333,7 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Venus DAI',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x334b3ecb4dca3593bccc3c7ebd1a1c1d1780fbf1', // GLENTY-BUSD LP
   },
   tokenSymbol: 'vDAI',
   tokenAddresses: {
@@ -360,7 +342,7 @@ const farms: FarmConfig[] = [
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
-}, */
+}, 
   {//
     pid: 20,
     id: 20,
@@ -382,8 +364,8 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
  
-/* {
-  pid: 20,
+{
+  pid: 45,
   id:201,
   risk: 5,
   isTokenOnly: true,
@@ -392,7 +374,7 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Ethereum Classic',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x3d6545b08693dae087e957cb1180ee38b9e3c25e',
   },
   tokenSymbol: 'ETC',
   tokenAddresses: {
@@ -401,7 +383,7 @@ const farms: FarmConfig[] = [
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
-}, */
+}, 
 
  ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////
