@@ -26,11 +26,11 @@ const HarvestAction: React.FC<FarmCardActionsProps> = ({ earnings, pid }) => {
   const { onStake } = useStake(pid)
 
   const rawEarningsBalance = getBalanceNumber(earnings)
-  const displayBalance = rawEarningsBalance.toLocaleString()
+  const displayBalance = rawEarningsBalance.toFixed(6)
 
   return (
     <Flex mb="8px" justifyContent="space-between" alignItems="center">
-      <Heading color={rawEarningsBalance === 0 ? 'textDisabled' : 'text'}>{displayBalance}</Heading>
+      <Heading color={rawEarningsBalance === 0 ? 'textDisabled' : 'text'}>{rawEarningsBalance === 0 ? '0' : displayBalance}</Heading>
       <BalanceAndCompound>
         {pid === 12 ? (
           <Button
