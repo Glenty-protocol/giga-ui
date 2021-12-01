@@ -273,7 +273,6 @@ function mobileC(){
         }
         })
   })
-  
 }
 window.innerWidth < 900 ? mobileC() : false
 

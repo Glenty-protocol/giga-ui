@@ -18,6 +18,7 @@ const Menu = (props) => {
       account={account}
       login={connect}
       logout={reset}
+      style={{width:'100%'}}
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={selectedLanguage && selectedLanguage.code}

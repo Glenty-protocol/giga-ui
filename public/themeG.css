@@ -40,6 +40,9 @@ nav svg{
   nav svg{
     width: 120px !important;
   }
+  .memo div div:nth-child(2) div:nth-child(2){
+    max-width: 100%;
+  }
   .approvebtn{
     font-size: 10pt !important;
     border-radius: 30px !important;
@@ -215,14 +218,14 @@ margin-top: 3%;
   background: none !important;
 }
 .grid-Glenty,.grid-Out{
-   grid-template-columns:90% !important;
+   grid-template-columns:100% !important;
    justify-content: center;
    text-align: center;
    align-items: center;
    grid-gap: 0 !important;
 }
 .grid-Gigapool,.grid-Out{
-  grid-template-columns: 90% !important;
+  grid-template-columns: 100% !important;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -238,9 +241,7 @@ margin-top: 3%;
 .glentyTop{
   background: none !important;
   margin-top: 5%;
-  margin-left: -6% !important;
-  width: 90% !important;
-  margin-right: 7%;
+  width: 100% !important;
 }
 .detailssection .harvestButton{
   width: 150px !important;
@@ -251,9 +252,7 @@ margin-top: 3%;
 .gigapoolTop,.outTop{
   background: none !important;
   margin-top: -15%;
-  margin-left: -7% !important;
-  width: 90% !important;
-  margin-right: 7%;
+  width: 100% !important;
 }
 #loading img{
   margin-left: -30% !important;

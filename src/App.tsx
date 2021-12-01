@@ -39,6 +39,7 @@ const App: React.FC = () => {
     <Router>
       <ResetCSS />
       <GlobalStyle />
+      <div className='memo'>
       <Menu>
         <Suspense fallback={<PageLoader />}>
           <Switch>
@@ -72,6 +73,7 @@ const App: React.FC = () => {
           </Switch>
         </Suspense>
       </Menu>
+      </div>
       <NftGlobalNotification />
     </Router>
   )
