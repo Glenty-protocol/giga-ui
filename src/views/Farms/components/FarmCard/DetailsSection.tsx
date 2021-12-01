@@ -17,7 +17,7 @@ export interface ExpandableSectionProps {
 }
 
 const Wrapper = styled.div`
-  margin-top: 24px;
+  margin-top: 8px;
 `
 
 const StyledLinkExternal = styled(LinkExternal)`
@@ -28,6 +28,7 @@ const StyledLinkExternal = styled(LinkExternal)`
   align-items: center;
 
   svg {
+    display:none;
     padding-left: 4px;
     height: 18px;
     width: auto;
@@ -51,13 +52,18 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   return (
     <Wrapper>
       <Flex justifyContent="space-between">
-        <Text color='white'>{TranslateString(316, 'Stake')}:</Text>
+      <Flex justifyContent="flex-start" marginBottom='5%'>
+        <Link external href={bscScanAddress} bold={false} color='#e3b82f' style={{fontFamily:'Kanit',fontWeight:200}}>
+          {TranslateString(356, 'View on BscScan')}
+        </Link>
+      </Flex>
         <StyledLinkExternal
           href={
             isTokenOnly
               ? `https://exchange.glentyswap.finance/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
               : `https://exchange.glentyswap.finance/#/add/${liquidityUrlPathParts}`
-          }
+          } 
+          style={{fontFamily:'Kanit',fontWeight:200,color:'#e3b82f',marginBottom:'5%'}}
         >
           {lpLabel}
         </StyledLinkExternal>
@@ -68,11 +74,6 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
           <Text color='white'>{totalValueFormated}</Text>
         </Flex>
       )}
-      <Flex justifyContent="flex-start">
-        <Link external href={bscScanAddress} bold={false} color='white'>
-          {TranslateString(356, 'View on BscScan')}
-        </Link>
-      </Flex>
     </Wrapper>
   )
 }

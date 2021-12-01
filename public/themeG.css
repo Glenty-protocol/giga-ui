@@ -1,18 +1,22 @@
 *{
-  font-family: montserrat !important;
   border-bottom: none !important;
 }
 #root{
   overflow-x: hidden !important;
 }
-.gigapoolimage{
-  padding: 5px;
+.grid-Glenty .gigaImg{
+  text-align: left;
 }
-.glentyTop .gigapoolimage{
-  padding: 2px !important;
+.grid-Glenty .gigaImg img{
+  margin-left: 10px;
+}
+.grid-Glenty .gigaName{
+  margin-left: -70%;
 }
 .harvestButton{
-width: 85px !important;
+width: 150px !important;
+background-color: #788cff !important;
+border-radius: 30px !important;
 }
 nav button:last-child{
 background-color: white !important;
@@ -35,6 +39,15 @@ nav svg{
 @media only screen and (max-width:900px) {
   nav svg{
     width: 120px !important;
+  }
+  .approvebtn{
+    font-size: 10pt !important;
+    border-radius: 30px !important;
+    padding: 0 !important;
+    margin-top: 0px !important;
+  }
+  .stackedSpace{
+    margin-top: 50px;
   }
 }
 body{
@@ -99,8 +112,6 @@ margin-left: -8%;
 /*page*/
 .glentyTop{
 margin-left: -30%;
-background:url('./images/Fichier 11.svg');
-background-repeat: no-repeat;
 padding-top: 1%;
 }
 .headerTitle{
@@ -157,6 +168,29 @@ margin-top: 3%;
 .headingremoved{
   display: none !important;
 }
+.gigapoolimage{
+  padding: 0px !important;
+}
+.coincont{
+  border-radius:0px !important; 
+  background:#030e33 !important;
+  border-bottom: 1px solid #768afd !important;
+}
+.coincont:first-child,.grid-Gigapool .coincont:first-child .coin:first-child,.grid-Glenty .coincont:first-child .coin:first-child,.grid-Out .coincont:first-child .coin:first-child{
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+.coincont:last-child,.grid-Gigapool .coincont:last-child .coin:last-of-type,.grid-Glenty .coincont:last-child .coin:last-of-type,.grid-Out .coincont:last-child .coin:last-of-type{
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
+.grid-Glenty .coincont:last-of-type,.grid-Gigapool .coincont:last-of-type,.grid-Out .coincont:last-of-type{
+  border-bottom: 0 !important;
+}
+.grid-Glenty .coincont:last-child .coin:last-of-type .detailssection,.grid-Gigapool .coincont:last-child .coin:last-of-type .detailssection,.grid-Out .coincont:last-child .coin:last-of-type .detailssection{
+  border-bottom-left-radius:25px;
+  border-bottom-right-radius:25px
+}
 .searchInputG,.searchInputO{
   display: block;
   border: 0;
@@ -181,19 +215,20 @@ margin-top: 3%;
   background: none !important;
 }
 .grid-Glenty,.grid-Out{
-   grid-template-columns:80% !important;
+   grid-template-columns:90% !important;
    justify-content: center;
    text-align: center;
    align-items: center;
+   grid-gap: 0 !important;
 }
 .grid-Gigapool,.grid-Out{
-  grid-template-columns: 80% !important;
+  grid-template-columns: 90% !important;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin-left: 0.5% !important;
     width: 100% !important;
-    grid-gap: 10px;
+    grid-gap: 0 !important;
 }
 .glentyTop{
   margin-left: 0% !important;
@@ -203,13 +238,19 @@ margin-top: 3%;
 .glentyTop{
   background: none !important;
   margin-top: 5%;
-  margin-left: -7% !important;
+  margin-left: -6% !important;
   width: 90% !important;
   margin-right: 7%;
 }
+.detailssection .harvestButton{
+  width: 150px !important;
+}
+.approvebtn{
+  width: 150px !important;
+}
 .gigapoolTop,.outTop{
   background: none !important;
-  margin-top: 5%;
+  margin-top: -15%;
   margin-left: -7% !important;
   width: 90% !important;
   margin-right: 7%;
@@ -237,15 +278,11 @@ font-size: 15pt !important;
 }
 .gigaTitle{
 margin-left: -30%;
-background: url('./images/Fichier 11.svg');
-background-repeat: no-repeat;
-background-position: center;
 }
 .tokenHeader img{
 background-color: white;
 border-radius: 50%;
-padding: 2px;
-width: 80px;
+width: 70px;
 height: 70px;
 }
 .fixedFooter{
@@ -337,12 +374,65 @@ fill:rgb(218, 165, 32) !important;
 .header-grid,.lang{
   display: none;
 }
+.detailssection .buttonsContainer{
+  text-align: right;
+}
 }
 @media only screen and (min-width:901px){
-.fixedFooter{display: none;}
+.fixedFooter,.pc-removed{display: none;}
+.blockPC button{
+  width: 150px;
+  padding: 0;
+  border-radius: 30px;
+}
+.detailsButton{
+  width: 90px !important;
+}
+.blockPC h2{
+  text-align: left !important;
+}
+.blockPC h2{
+  margin-top: 25px !important;
+}
 html{
   zoom: 67%;
 }
+.grid-Glenty .coin{
+  padding: 1% 1% 0% !important;
+}
+.grid-Glenty .coin img{
+  height: 75px !important;
+  width: 75px !important;
+}
+.grid-Glenty .logoCont{
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 5px;
+}
+.grid-Glenty .nameCont{
+  margin-left: -35%;
+  font-size: 18pt !important;
+}
+.grid-Glenty .aprCont,.grid-Glenty .earned{
+  margin-top: 25% !important;
+  font-size: 16pt !important;
+}
+.grid-Glenty .earned h2{
+  margin-top: -6px !important;
+  font-size: 16pt !important;
+}
+.grid-Glenty .detailsButton{
+  width: 105px !important;
+}
+.grid-Glenty .detailsCont{
+  margin-left: -2.5% !important;
+  width: 105% !important;
+}
+.detailssection{
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
 }
 
 button[aria-label='Toggle menu']{
@@ -353,7 +443,55 @@ display: none !important;
 }
 .earned h2{
   font-size: 8pt !important;
-  width:100%;
-  text-align: center;
-  margin-top: -20%;
+  margin:auto;
+  text-align:start;
+  width:80%;
+  margin-top: -12px;
+}
+.coincont{
+  border-radius:25px;
+  background:#788cff;
+}
+.buttonaddmin{
+  background: transparent !important;
+  border: 1px solid #788cff !important;
+  border-radius: 30px !important;
+  width: 68px !important;
+}
+@media only screen and (min-width:421px){
+  @media only screen and (max-width:900px){
+    .detailssection .harvestButton{
+      width: 100px !important;
+  }
+}
+}
+.mobileDetails .details{
+  font-family: Kanit;
+  font-weight: 200;
+}
+@media only screen and (min-width:1600px){
+  .grid-Gigapool .gigapoolimage,.grid-Out .gigapoolimage{
+    width: 70px!important;
+    height: 70px !important;
+  }
+  .grid-Gigapool .logoCont,.grid-Out .logoCont{
+    text-align: left !important;
+    padding-left: 8px !important;
+  }
+  .grid-Gigapool .detailsButton,.grid-Out .detailsButton{
+    width: 100px !important;
+  }
+  .grid-Glenty .detailsButton{
+    width: 95px !important;
+  }
+}
+@media only screen and (min-width:1000px){
+  @media only screen and (max-width:1300px){
+    .harvestButton,.approvebtn,.blockPC button{
+      width: 130px !important;
+  }
+  .blockPC button{
+    font-size: 15px !important;
+  }
+}
 }

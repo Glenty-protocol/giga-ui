@@ -64,14 +64,17 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
         depositFeeBP={depositFeeBP}
       />
     ) : (
-      <Button mt="8px" fullWidth disabled={requestedApproval} style={{backgroundColor:'rgb(218, 165, 32)',marginTop:'12%'}} onClick={handleApprove}>
+      <Flex justifyContent='space-between' className='blockPC'>
+      <h2 style={{color:'white',fontSize:'20px',marginTop:'10px'}} className='removeearned'>0</h2>
+      <Button mt="8px" fullWidth disabled={requestedApproval} style={{backgroundColor:'rgb(218, 165, 32)'}} onClick={handleApprove} className='approvebtn'>
         {TranslateString(999, 'Approve Contract')}
       </Button>
+      </Flex>
     )
   }
 
   return (
-    <Action>
+    <Action className='buttonsContainer'>
       <Flex className='removeearned'>
         <Text bold color='white' textTransform="uppercase" fontSize="12px" pr="3px">
           {/* TODO: Is there a way to get a dynamic value here from useFarmFromSymbol? */}
@@ -82,7 +85,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
         </Text>
       </Flex>
       <HarvestAction earnings={earnings} pid={id} />
-      <Flex className='removeearned'>
+      <Flex className='removeearned stackedSpace'>
         <Text bold textTransform="uppercase" color="white" fontSize="12px" pr="3px">
           {lpName}
         </Text>
@@ -90,7 +93,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account }
           {TranslateString(999, 'Staked')}
         </Text>
       </Flex>
-      {!account ? <UnlockButton mt="8px" fullWidth /> : renderApprovalOrStakeButton()}
+      {!account ?<Flex justifyContent='space-between' className='blockPC'><h2 style={{color:'white',fontSize:'20px',marginTop:'10px'}} className='removeearned'>0</h2> <UnlockButton mt="8px" className='approvebtn' fullWidth/></Flex> : renderApprovalOrStakeButton()}
     </Action>
   )
 }

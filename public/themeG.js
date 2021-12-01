@@ -78,20 +78,19 @@ const docsl = document.createElement("a")
 }, 2000);
 /*document.querySelector('button').remove();*/
 
-document.querySelector('h1').style.marginTop='20%';
 
 document.querySelector('.searchInputG').addEventListener('keyup',function(){
   const searchbox = document.querySelector('input.searchInputG');
   const Cnames = document.querySelector('.grid-Gigapool').childNodes
   for(let i =0; i < Cnames.length; i++){
-    Cnames[i].querySelector('.tokenHeader').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].style.display='':Cnames[i].style.display='none'
+    Cnames[i].querySelector('.nameCont').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].style.display='':Cnames[i].style.display='none'
   }
   })
   document.querySelector('.searchInputO').addEventListener('keyup',function(){
     const searchbox = document.querySelector('input.searchInputO');
     const Cnames = document.querySelector('.grid-Out').childNodes
     for(let i =0; i < Cnames.length; i++){
-      Cnames[i].querySelector('.tokenHeader').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].style.display='':Cnames[i].style.display='none'
+      Cnames[i].querySelector('.nameCont').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].style.display='':Cnames[i].style.display='none'
     }
     })
       document.querySelector('svg').parentElement.addEventListener('click',function(){
@@ -261,16 +260,16 @@ function mobileC(){
     })
     document.querySelector('.searchInputG').addEventListener('keyup',function(){
       const searchbox = document.querySelector('input.searchInputG');
-      const Cnames = document.querySelectorAll('.grid-Gigapool .coin')
+      const Cnames = document.querySelectorAll('.grid-Gigapool .coincont .coin')
       for(let i =0; i < Cnames.length; i++){
-        Cnames[i].querySelector('div').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].parentElement.style.display='':Cnames[i].parentElement.style.display='none'
+        Cnames[i].querySelectorAll('div')[1].innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].parentElement.style.display='':Cnames[i].parentElement.style.display='none'
       }
       })
       document.querySelector('.searchInputO').addEventListener('keyup',function(){
         const searchbox = document.querySelector('input.searchInputO');
-        const Cnames = document.querySelectorAll('.grid-Out .coin')
+        const Cnames = document.querySelectorAll('.grid-Out .coincont .coin')
         for(let i =0; i < Cnames.length; i++){
-          Cnames[i].querySelector('div').innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].parentElement.style.display='':Cnames[i].parentElement.style.display='none'
+          Cnames[i].querySelectorAll('div')[1].innerText.toLowerCase().includes(searchbox.value.toLowerCase())?Cnames[i].parentElement.style.display='':Cnames[i].parentElement.style.display='none'
         }
         })
   })

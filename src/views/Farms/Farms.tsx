@@ -118,7 +118,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
 
   return (
     <Page>
-      <Heading as="h1" size="30pt" color="rgb(218, 165, 32)" mb="50px" style={{ textAlign: 'center',fontSize:'30pt',marginLeft:'-30%'}} className='headingremoved'>
+     {/* <Heading as="h1" size="30pt" color="rgb(218, 165, 32)" mb="50px" style={{ textAlign: 'center',fontSize:'30pt',marginLeft:'-30%'}} className='headingremoved'>
         {tokenMode
           ? TranslateString(10002, 'Stake tokens to earn GLENTY')
           : TranslateString(320, 'Stake LP tokens to earn GLENTY')}
@@ -126,7 +126,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Heading as="h2" color="rgb(218, 165, 32)" mb="50px" style={{ textAlign: 'center',fontSize:'20px',marginLeft:'-30%',fontWeight:'lighter'}} className='headingremoved'>
         {TranslateString(10000, 'Deposit Fee will be used to buyback GLENTY')}
       </Heading>
-     {/* <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} /> */}
+      <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} /> */}
      <div className='glentyTop'>
      <div className='headerTitle'> GLENTY</div>
         <div className="grid-Glenty">

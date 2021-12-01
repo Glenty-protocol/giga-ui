@@ -31,9 +31,9 @@ const CardHeading: React.FC<ExpandableSectionProps> = ({
   depositFee,
 }) => {
   return (
-    <div className='tokenHeader' style={{backgroundColor: "rgba(49, 39, 131, 0.9)",borderTopRightRadius:'25px',borderTopLeftRadius:'25px'}} >
+    <div className='tokenHeader' style={{backgroundColor: "#788cff",borderTopRightRadius:'25px',borderTopLeftRadius:'25px'}} >
     <Wrapper justifyContent="space-between" alignItems="center" mb="12px" padding='20px 12px'>
-      <Image src={farmImage} alt={tokenSymbol} width={64} height={64} />
+      <Image src={farmImage} alt={tokenSymbol} width={70} height={70} />
       <Flex flexDirection="column" alignItems="flex-end">
         <h1 style={{color:'white',fontSize:'20pt',marginBottom:'15px',paddingRight:'20%'}}>{tokenSymbol}</h1>
         <Flex justifyContent="center">

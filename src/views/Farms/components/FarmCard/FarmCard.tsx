@@ -135,63 +135,41 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
 
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
   return (
-    <div style={{background:'rgb(40, 13, 95)',borderRadius:'25px'}}>
-      {window.innerWidth>900?(<><CardHeading
-        lpLabel={lpLabel}
-        multiplier={farm.multiplier}
-        risk={risk}
-        depositFee={farm.depositFeeBP}
-        farmImage={farmImage}
-        tokenSymbol={farm.tokenSymbol}
-      />
+    <div className='coincont'>
+      {window.innerWidth>900?(<div style={{display:'grid',gridTemplateColumns:'25% 25% 25% 25%',padding:"5% 1% 0% 1%",background:'rgb(49, 39, 131)',borderRadius:'18px'}} className="coin">
+          <div className='logoCont'>
+          <img style={{height:'56px',width:'56px',background:'white',borderRadius:'50%',textAlign:'right'}} className='gigapoolimage' src={farmImage} alt={farm.lpSymbol} />
+          </div>
+          <div style={{color:'white',fontSize:'13pt',marginTop:'30%',textAlign:'left'}} className='nameCont'>
+          {farm.tokenSymbol}
+        </div>
+        <div style={{color:'white',fontSize:'10pt',marginTop:'30%'}} className='aprCont'>
+        <div style={{fontFamily:'Kanit',fontWeight:200,margin:'auto',textAlign:'start',width:'80%'}}>APR</div>
+        <div style={{margin:'auto',textAlign:'start',width:'80%',marginTop:'7%'}}>
+        {farmAPY}%
+        </div>
+        </div>
+        <div className='earned' style={{color:'white',fontSize:'10pt',marginTop:'30%'}}>
+        <div style={{fontFamily:'Kanit',fontWeight:200,margin:'auto',textAlign:'start',width:'80%'}}>Earned</div>
+        <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
+        </div>
 
-        <Flex justifyContent="space-between" alignItems="center" padding='0px 24px'>
-          <Text color='white'>{TranslateString(352, 'APR')}:</Text>
-          <Text color='white' bold style={{ display: 'flex', alignItems: 'center' }}>
-            {farm.apy ? (
-              <>
-                <ApyButton
-                  lpLabel={lpLabel}
-                  quoteTokenAdresses={quoteTokenAdresses}
-                  quoteTokenSymbol={quoteTokenSymbol}
-                  tokenAddresses={tokenAddresses}
-                  cakePrice={cakePrice}
-                  apy={farm.apy}
-                />
-                {farmAPY}%
-              </>
-            ) : (
-              <Skeleton height={24} width={80} />
-            )}
-          </Text>
-        </Flex>
-        
-         <Flex justifyContent="space-between" padding='0px 24px'>
-         <Text style={{color:'white'}}>{TranslateString(318, 'Earn')}:</Text>
-         <MultiplierTag variant="secondary">x1</MultiplierTag>
- 
- {/* <Text bold>{earnLabel}</Text> */}
-       </Flex>
-       <Flex justifyContent="space-between" padding='0px 24px'>
-         <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
-         <Text bold style={{ fontSize: '12pt',color:'white' }}>
-           { farm.depositFeeBP / 100}%
-         </Text>
-       </Flex>
-       <div style={{padding:'0px 24px'}}>
-       <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
-       </div>
-       
-      
-     
-      <div style={{margin:'20px 0px'}}>
+        <div style={{margin:'10px -100px 0% -4%',width:"408%",background:'#030e33',padding:'0px 12px',borderBottomLeftRadius:'25px',borderBottomRightRadius:'25px'}}>
+        <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
+      <div style={{margin:'15px',paddingTop:'10px',borderTop:'1px solid #768afd',width:'110%',marginLeft:'-5%',textAlign:'left'}} className='detailsCont'>
       <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
         expanded={showExpandableSection}
       />
       </div>
-      <div style={{marginBottom:'10px'}}>
-      <ExpandingWrapper expanded={showExpandableSection}>
+      <div className='detailssection'>
+      <ExpandingWrapper expanded={showExpandableSection} style={{padding:'0px'}}>
+      <Flex>
+         <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}</Text>
+         <Text bold style={{ fontSize: '12pt',color:'#788cff',marginLeft:'5px' }}>
+           {farm.depositFeeBP / 100}%
+         </Text>
+      </Flex> 
         <DetailsSection
           removed={removed}
           isTokenOnly={farm.isTokenOnly}
@@ -207,36 +185,41 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           tokenAddresses={tokenAddresses}
         />
       </ExpandingWrapper>
-      </div></>):(
-        <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',padding:"5% 1%"}} className="coin">
-          <img style={{height:'54px',width:'54px',background:'white',borderRadius:'50%'}} className='gigapoolimage' src={farmImage} alt={farm.lpSymbol} />
-          <div style={{color:'white',fontSize:'8pt',marginTop:'30%',textAlign:'center'}}>
-          {farm.lpSymbol}
+      </div>
+        </div>
+      </div>):(
+        <div style={{display:'grid',gridTemplateColumns:'20% 20% 20% 20% 20%',padding:"5% 1% 0% 1%",background:'#312783'}} className="coin">
+          <div>
+          <img style={{height:'48px',width:'48px',background:'white',borderRadius:'50%'}} className='gigapoolimage' src={farmImage} alt={farm.lpSymbol} />
+          </div>
+          <div style={{color:'white',fontSize:'9pt',marginTop:'30%',textAlign:'left'}}>
+          {farm.tokenSymbol}
         </div>
         <div style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
-        APR:
-        <br />
+        <div style={{fontFamily:'Kanit',fontWeight:200,margin:'auto',textAlign:'start',width:'80%'}}>APR</div>
+        <div style={{margin:'auto',textAlign:'start',width:'80%',marginTop:'7%'}}>
         {farmAPY}%
         </div>
+        </div>
         <div className='earned' style={{color:'white',fontSize:'8pt',marginTop:'30%'}}>
-          Earned:
+        <div style={{fontFamily:'Kanit',fontWeight:200,margin:'auto',textAlign:'start',width:'80%'}}>Earned</div>
         <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
         </div>
-        <div style={{marginTop:'30%'}}>
+        <div style={{marginTop:'25%'}} className='mobileDetails'>
         <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
         expanded={showExpandableSection}
       />
       </div>
-      <div style={{marginBottom:'10px',width:"500%"}}>
-      <ExpandingWrapper expanded={showExpandableSection}>
-      <Flex justifyContent="space-between" marginTop='20px'>
-         <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}:</Text>
-         <Text bold style={{ fontSize: '12pt',color:'white' }}>
+      <div className='detailssection' style={{marginTop:'10px',width:"510%",background:'#030e33',marginBottom:'0%',marginRight:'-1%',marginLeft:"-5%"}}>
+      <ExpandingWrapper expanded={showExpandableSection} style={{padding:'0px 18px'}}>
+      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
+      <Flex marginTop='20px'>
+         <Text style={{ fontSize: '12pt',color:'white'}}>{TranslateString(10001, 'Deposit Fee')}</Text>
+         <Text bold style={{ fontSize: '12pt',color:'#788cff',marginLeft:'5px' }}>
            {farm.depositFeeBP / 100}%
          </Text>
       </Flex> 
-      <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
         <DetailsSection
           removed={removed}
           isTokenOnly={farm.isTokenOnly}
