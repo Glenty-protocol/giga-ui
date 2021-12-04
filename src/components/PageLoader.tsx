@@ -5,16 +5,17 @@ import Page from './layout/Page'
 
 const Wrapper = styled(Page)`
   display: flex;
+  margin:auto;
   justify-content: center;
   align-items: center;
+  width:100%;
+  height:100%;
 `
 
 const PageLoader: React.FC = () => {
   return (
-    <Wrapper>
-      <Spinner />
-    </Wrapper>
-  )
+    <Wrapper />
+    )
 }
 
 export default PageLoader

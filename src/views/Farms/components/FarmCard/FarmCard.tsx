@@ -156,7 +156,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
 
         <div style={{margin:'10px -100px 0% -4%',width:"408%",background:'#030e33',padding:'0px 12px',borderBottomLeftRadius:'25px',borderBottomRightRadius:'25px'}}>
         <CardActionsContainer farm={farm} ethereum={ethereum} account={account} />
-      <div style={{margin:'15px',paddingTop:'10px',borderTop:'1px solid #768afd',width:'110%',marginLeft:'-5%',textAlign:'left'}} className='detailsCont'>
+      <div style={{margin:'15px',paddingTop:'10px',borderTop:'1px solid rgb(49, 39, 131)',width:'calc(100% + 24px)',marginLeft:'-12px',textAlign:'left'}} className='detailsCont'>
       <ExpandableSectionButton
         onClick={() => setShowExpandableSection(!showExpandableSection)}
         expanded={showExpandableSection}
