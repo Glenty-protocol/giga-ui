@@ -69,13 +69,10 @@ const docsl = document.createElement("a")
  nav.insertBefore(heade, nav.childNodes[1])
  document.querySelector('#root div').querySelectorAll('div')[12].style.background='transparent';
  document.querySelector('#root div').querySelectorAll('div')[14].style.background='transparent';
- const socialL = document.querySelector('#root div').querySelectorAll('div')[17]
- window.setInterval(function(){
-  if(true){
-      socialL.classList.add('socialL');
+ const socialL = document.querySelector('#root div').querySelectorAll('div')[18]
+ socialL.classList.add('socialL');
   document.querySelector('#root').appendChild(document.querySelector('.socialL').parentElement);
-  }
-}, 2000);
+ 
 /*document.querySelector('button').remove();*/
 
 
@@ -111,7 +108,16 @@ function mobileC(){
     } else {
       document.querySelector("nav").style.display = "flex";
     }
-  }}
+  }
+  let phonePrice = document.createElement('div');
+  document.querySelector('nav').insertBefore(phonePrice, document.querySelector('nav').childNodes[1]);
+  document.querySelectorAll('div')[8].querySelector('button').click()
+  phonePrice.classList.add('phonePrice');
+  setTimeout(function(){
+    document.querySelector('.price')?phonePrice.innerText=document.querySelector('.price').innerText:phonePrice.style.display='none';
+  },3000)
+  
+}
   function createFooter(){
     /*footer*/
     const fixedFooter = document.createElement('div');
