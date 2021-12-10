@@ -113,8 +113,8 @@ function mobileC(){
   document.querySelector('nav').insertBefore(phonePrice, document.querySelector('nav').childNodes[1]);
   document.querySelectorAll('div')[8].querySelector('button').click()
   phonePrice.classList.add('phonePrice');
-  setTimeout(function(){
-    document.querySelector('.price')?phonePrice.innerText=document.querySelector('.price').innerText:phonePrice.style.display='none';
+  setInterval(function(){
+    document.querySelector('.price')?phonePrice.innerText=document.querySelector('.price').innerText:false;
   },3000)
   
 }
