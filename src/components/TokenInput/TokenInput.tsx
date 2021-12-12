@@ -16,7 +16,7 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
   const TranslateString = useI18n()
   return (
     <StyledTokenInput>
-      <StyledMaxText>
+      <StyledMaxText style={{color:'rgb(218,165,32)'}}>
         {max.toLocaleString()} {symbol} {TranslateString(526, 'Available')}
       </StyledMaxText>
       <Input
@@ -25,7 +25,7 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
             <StyledTokenSymbol>{symbol}</StyledTokenSymbol>
             <StyledSpacer />
             <div>
-              <Button size="sm" onClick={onSelectMax}>
+              <Button size="sm" onClick={onSelectMax} style={{background:'rgb(49, 39, 131)'}}>
                 {TranslateString(452, 'Max')}
               </Button>
             </div>
@@ -45,7 +45,9 @@ const TokenInput: React.FC<TokenInputProps> = ({ max, symbol, onChange, onSelect
   )
 }
 
-const StyledTokenInput = styled.div``
+const StyledTokenInput = styled.div`
+background:rgb(49, 39, 131) !important;
+`
 
 const StyledSpacer = styled.div`
   width: ${(props) => props.theme.spacing[3]}px;
@@ -58,7 +60,8 @@ const StyledTokenAdornmentWrapper = styled.div`
 
 const StyledMaxText = styled.div`
   align-items: center;
-  color: ${(props) => props.theme.colors.primary};
+  color: rgb(218,165,32);
+  background:rgb(49, 39, 131) !important;
   display: flex;
   font-size: 14px;
   font-weight: 700;
@@ -67,7 +70,7 @@ const StyledMaxText = styled.div`
 `
 
 const StyledTokenSymbol = styled.span`
-  color: ${(props) => props.theme.colors.primary};
+  color: white;
   font-weight: 700;
 `
 
