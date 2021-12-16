@@ -1927,8 +1927,8 @@ const farms: FarmConfig[] = [
            ////////////////////////////////////////////////////////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/* {
-  pid: 48,
+ {
+  pid: 40,
   id:480,
   risk: 5,
   isTokenOnly: true,
@@ -1937,19 +1937,19 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Avalanche',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'AVAX',
   tokenAddresses: {
     97: '',
-    56: '0x1ce0c2827e2ef14d5c4f29a091d735a204794041',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
  
 {
-  pid: 42,
+  pid: 40,
   id:420,
   risk: 5,
   isTokenOnly: true,
@@ -1958,18 +1958,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Cosmos',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ATOM',
   tokenAddresses: {
     97: '',
-    56: '0x0eb3a705fc54725037cc9e008bdede697f62f335',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 123,
+  pid: 40,
   id:1230,
   risk: 5,
   isTokenOnly: true,
@@ -1978,18 +1978,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Dai',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'DAI',
   tokenAddresses: {
     97: '',
-    56: '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 45,
+  pid: 40,
   id:450,
   risk: 5,
   isTokenOnly: true,
@@ -1998,18 +1998,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Tezos',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'XTZ',
   tokenAddresses: {
     97: '',
-    56: '0x16939ef78684453bfdfb47825f8a5f714f12623a',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 124,
+  pid: 40,
   id:1240,
   risk: 5,
   isTokenOnly: true,
@@ -2018,18 +2018,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'eCash',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'XEC',
   tokenAddresses: {
     97: '',
-    56: '0x0ef2e7602add1733bfdb17ac3094d0421b502ca3',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 35,
+  pid: 40,
   id:350,
   risk: 5,
   isTokenOnly: true,
@@ -2038,18 +2038,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Pancakeswap',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'Cake',
   tokenAddresses: {
     97: '',
-    56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 66,
+  pid: 40,
   id:660,
   risk: 5,
   isTokenOnly: true,
@@ -2058,19 +2058,19 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Axie Infinity',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'AXS',
   tokenAddresses: {
     97: '',
-    56: '0x715d400f88c167884bbcc41c5fea407ed4d2f8a0',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
  
 {
-  pid: 29,
+  pid: 40,
   id:290,
   risk: 5,
   isTokenOnly: true,
@@ -2079,18 +2079,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'EOS',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'EOS',
   tokenAddresses: {
     97: '',
-    56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 82,
+  pid: 40,
   id:820,
   risk: 5,
   isTokenOnly: true,
@@ -2099,18 +2099,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Near Protocol',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'NEAR',
   tokenAddresses: {
     97: '',
-    56: '0x1fa4a73a3f0133f0025378af00236f3abdee5d63',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 125,
+  pid: 40,
   id:1250,
   risk: 5,
   isTokenOnly: true,
@@ -2119,16 +2119,16 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Fantom',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'FTM',
   tokenAddresses: {
     97: '',
-    56: '0xad29abb318791d579433d831ed122afeaf29dcfe',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
-}, */
+},
   {//
     pid: 27,
     id: 27,
@@ -2150,8 +2150,8 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.busd,
   },
 
-/* {
-  pid: 43,
+ {
+  pid: 40,
   id:430,
   risk: 5,
   isTokenOnly: true,
@@ -2160,18 +2160,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'TerraUSD',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'UST',
   tokenAddresses: {
     97: '',
-    56: '0x56b6fb708fc5732dec1afc8d8556423a2edccbd6',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 126,
+  pid: 40,
   id:1260,
   risk: 5,
   isTokenOnly: true,
@@ -2180,18 +2180,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Maker',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'MKR',
   tokenAddresses: {
     97: '',
-    56: '0x5f0da599bb2cccfcf6fdfd7d81743b6020864350',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 55,
+  pid: 40,
   id:550,
   risk: 5,
   isTokenOnly: true,
@@ -2200,18 +2200,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Bittorent',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'BTT',
   tokenAddresses: {
     97: '',
-    56: '0x8595f9da7b868b1822194faed312235e43007b49',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 46,
+  pid: 40,
   id:460,
   risk: 5,
   isTokenOnly: true,
@@ -2220,18 +2220,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Compound',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'COMP',
   tokenAddresses: {
     97: '',
-    56: '0x52ce071bd9b1c4b00a0b92d298c512478cad67e8',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 128,
+  pid: 40,
   id:1280,
   risk: 5,
   isTokenOnly: true,
@@ -2240,18 +2240,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Arweave',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'AR',
   tokenAddresses: {
     97: '',
-    56: '0xa142182D9Be18F300F42cca82660d274EED5eBBa',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 64,
+  pid: 40,
   id:640,
   risk: 5,
   isTokenOnly: true,
@@ -2260,19 +2260,19 @@ const farms: FarmConfig[] = [
   lpSymbol: 'ZCash',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ZEC',
   tokenAddresses: {
     97: '',
-    56: '0x1ba42e5193dfa8b03d15dd1b86a3113bbbef8eeb',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 
 {
-  pid: 69,
+  pid: 40,
   id:690,
   risk: 5,
   isTokenOnly: true,
@@ -2281,18 +2281,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Synthetix Network',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'SNX',
   tokenAddresses: {
     97: '',
-    56: '0x9ac983826058b8a9c7aa1c9171441191232e8404',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 67,
+  pid: 40,
   id:670,
   risk: 5,
   isTokenOnly: true,
@@ -2301,18 +2301,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Yearn Finance',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'YFI',
   tokenAddresses: {
     97: '',
-    56: '0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 72,
+  pid: 40,
   id:720,
   risk: 5,
   isTokenOnly: true,
@@ -2321,18 +2321,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Enjin Coin',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ENJ',
   tokenAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 130,
+  pid: 40,
   id:1300,
   risk: 5,
   isTokenOnly: true,
@@ -2341,18 +2341,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Perpetual Protocol',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'PERP',
   tokenAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 134,
+  pid: 40,
   id:1340,
   risk: 5,
   isTokenOnly: true,
@@ -2361,18 +2361,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'ICON',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ICX',
   tokenAddresses: {
     97: '',
-    56: '0x587c3de49bfb8bcf3ea56b0e45eed6d5620c6044',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 135,
+  pid: 40,
   id:1350,
   risk: 5,
   isTokenOnly: true,
@@ -2381,18 +2381,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'IOST',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'IOST',
   tokenAddresses: {
     97: '',
-    56: '0x519663c084e760a6af43549897219f539c902532',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 137,
+  pid: 40,
   id:1370,
   risk: 5,
   isTokenOnly: true,
@@ -2401,18 +2401,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Celer Network',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'CELR',
   tokenAddresses: {
     97: '',
-    56: '0x1f9f6a696c6fd109cd3956f45dc709d2b3902163',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 84,
+  pid: 40,
   id:840,
   risk: 5,
   isTokenOnly: true,
@@ -2421,18 +2421,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Zilliqa',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ZIL',
   tokenAddresses: {
     97: '',
-    56: '0xb86abcb37c3a4b64f74f59301aff131a1becc787',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 138,
+  pid: 40,
   id:1380,
   risk: 5,
   isTokenOnly: true,
@@ -2441,18 +2441,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Pax Dollar',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'USDP',
   tokenAddresses: {
     97: '',
-    56: '0xb3c11196a4f3b1da7c23d9fb0a3dde9c6340934f',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 140,
+  pid: 40,
   id:1400,
   risk: 5,
   isTokenOnly: true,
@@ -2461,18 +2461,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Audius',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'AUDIO',
   tokenAddresses: {
     97: '',
-    56: '0xb4e2da2116412bb287d014424a9e92c1475fe6fa',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
  {
-  pid: 93,
+  pid: 40,
   id:930,
   risk: 5,
   isTokenOnly: true,
@@ -2481,18 +2481,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Ontology',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ONT',
   tokenAddresses: {
     97: '',
-    56: '0xfd7b3a77848f1c2d67e05e54d78d174a0c850335',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 116,
+  pid: 40,
   id:1160,
   risk: 5,
   isTokenOnly: true,
@@ -2501,18 +2501,18 @@ const farms: FarmConfig[] = [
   lpSymbol: 'Ankr',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'ANKR',
   tokenAddresses: {
     97: '',
-    56: '0xf307910a4c7bbc79691fd374889b36d8531b08e3',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
 },
 {
-  pid: 117,
+  pid: 40,
   id:1170,
   risk: 5,
   isTokenOnly: true,
@@ -2521,16 +2521,16 @@ const farms: FarmConfig[] = [
   lpSymbol: 'IoTeX',
   lpAddresses: {
     97: '',
-    56: '0xdb4a77674610934775fce8eb5d95a614db021b13', // GLENTY-BUSD LP
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce', // GLENTY-BUSD LP
   },
   tokenSymbol: 'IOTX',
   tokenAddresses: {
     97: '',
-    56: '0x9678e42cebeb63f23197d726b29b1cb20d0064e5',
+    56: '0x9860d0fe88eb83cecca80843ec57fcc361f674ce',
   },
   quoteTokenSymbol: QuoteToken.BUSD,
   quoteTokenAdresses: contracts.busd,
-}, */
+},
 ]
 
 export default farms
