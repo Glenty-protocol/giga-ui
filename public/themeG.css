@@ -317,6 +317,10 @@ background-size: cover;
 .footerLinks{
 display: block;
 text-align: center;
+transition: 0.4s;
+}
+.footerLinks:hover{
+  filter:brightness(200%);
 }
 .footerImg{
 height: 25px;
@@ -357,6 +361,7 @@ padding-bottom: 40px;
 width: 80%;
 margin: auto;
 border-bottom: 3px solid #989fac !important;
+transition: 0.4s;
 }
 .moreLinks p{
 display: inline-block;
@@ -365,6 +370,9 @@ line-height: 1.75;
 .moreLinks img{
 display: inline-block;
 margin: 0;
+}
+.moreLinks:hover{
+  filter:brightness(200%);
 }
 #loading{
 width: 100% !important;
