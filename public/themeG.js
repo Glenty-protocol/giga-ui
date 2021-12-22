@@ -131,6 +131,7 @@ function mobileC(){
     Top100M.classList.add('footerLinks');
     MoreM.classList.add('footerLinks');
     gigapoolM.classList.add('footerLinks');
+    gigapoolM.classList.add('activeFooter');
   
   
     TradeM.setAttribute('href','https://exchange.glenty.com/#/swap');
