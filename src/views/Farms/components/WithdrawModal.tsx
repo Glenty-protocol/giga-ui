@@ -33,6 +33,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
   }, [fullBalance, setVal])
 
   return (
+    <div className='depositModal'>
     <Modal title={`Withdraw ${tokenName}`} onDismiss={onDismiss}>
       <TokenInput
         onSelectMax={handleSelectMax}
@@ -42,10 +43,11 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
         symbol={tokenName}
       />
       <ModalActions>
-        <Button variant="secondary" onClick={onDismiss}>
+        <Button variant="secondary" onClick={onDismiss} style={{background:"#788cff",color:'white'}}>
           {TranslateString(462, 'Cancel')}
         </Button>
         <Button
+        style={{background:'rgb(218, 165, 32)'}}
           disabled={pendingTx}
           onClick={async () => {
             setPendingTx(true)
@@ -58,6 +60,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
         </Button>
       </ModalActions>
     </Modal>
+    </div>
   )
 }
 

@@ -2,13 +2,14 @@ window.onload = ()=>{
   
   window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector('nav').style.background = "url('./images/Fichier 8.svg')";
-  } else {
-    document.querySelector('nav').style.background = "none";
+  function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector('nav').classList.add("nav-scroll");
+
+    } else {
+      document.querySelector('nav').classList.remove("nav-scroll");
+    }
   }
-}
 
 const home = document.createElement("div")
 const trade = document.createElement("div")
@@ -38,6 +39,7 @@ const docsl = document.createElement("a")
  gigapooll.setAttribute("href", "https://giga.glenty.com")
  githubl.setAttribute("href", "https://github.com/glenty-protocol")
  docsl.setAttribute("href", "./Glenty Index Token.pdf")
+ docsl.setAttribute("target", "_blank")
 
  homel.setAttribute("class", "nav-links")
  tradel.setAttribute("class", "nav-links")

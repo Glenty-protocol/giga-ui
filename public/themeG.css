@@ -28,6 +28,12 @@ nav{
 transition: 0.4s !important;
 background: transparent !important;
 }
+nav.nav-scroll{
+  background : url('./images/Fichier 8.svg') !important;
+  top: 0px;
+  padding-top: 50px !important;
+  padding-bottom: 75px !important;
+}
 #root{
 background : url("./images/GLENTYPOOL_background_Plan de travail 1 copie 8.svg") !important;
 background-position-x: center !important;
@@ -114,8 +120,12 @@ margin-left: -8%;
 }
     .socialL{
       bottom: 20px;
-      right: 20px;
+      right: 0px;
       position: fixed;
+      display: grid !important;
+      grid-template-columns: 45% 45%;
+      grid-column-gap: 5%;
+      grid-row-gap: 20px;
     }
     .socialL div svg,.socialL a svg{
       fill: white;
