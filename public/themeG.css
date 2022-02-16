@@ -63,6 +63,7 @@ nav svg{
   }
   .depositModal{
     margin: auto 12px;
+    max-width: 100%;
   }
 }
 body{
