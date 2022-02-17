@@ -168,7 +168,7 @@ display:grid;
 }
 @media only screen and (max-width:1500px){
 .nav-links{
-  font-size: 14pt !important;
+  font-size: 17pt !important;
 }
 .header-grid{
   margin-left: -12% !important;
